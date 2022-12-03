@@ -10,13 +10,13 @@
 $white-bg: #f9f7f5;
 $red-bg: #64313e;
 $red-text: rgba(64, 0, 16, 0.8);
-$red-page-nav: rgba(64, 0, 16, 0.5);
 
 body {
   background-color: black;
   color: black;
   font-family: "Tangerine", sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
 
 img {

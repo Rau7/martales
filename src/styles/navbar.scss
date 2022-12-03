@@ -1,0 +1,42 @@
+$red-page-nav: rgba(64, 0, 16, 0.5);
+
+/*font-family: 'DM Sans', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Tangerine', cursive;*/
+
+header {
+  position: absolute;
+  height: 25.57px;
+  width: 100%;
+  right: 5rem;
+  top: 4.8rem;
+  nav {
+    .nav-list {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      list-style: none;
+      gap: 5rem;
+    }
+    .nav-item {
+      a {
+        color: $red-page-nav;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.4s;
+      }
+      a:hover {
+        color: #4d0013;
+      }
+    }
+  }
+}
+
+.nav-item.active {
+  a {
+    color: #4d0013;
+  }
+}
