@@ -4,10 +4,25 @@ $white-bg: #f9f7f5;
 .hero-sec {
   background-color: $white-bg;
   padding-top: 14rem;
+  position: relative;
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 140vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../images/stripes-bg.webp");
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
   .hero-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
     .hero {
       width: 70%;
       display: flex;

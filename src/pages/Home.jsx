@@ -32,6 +32,7 @@ function Home() {
       </header>
       <main>
         <section className="hero-sec">
+          <div className="hero-bg"></div>
           <div className="hero-container">
             <div className="hero">
               <img
