@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:wght@400;700&family=Tangerine:wght@400;700&display=swap");
+
+$white-bg: #f9f7f5;
+$red-bg: #64313e;
+$red-text: rgba(64, 0, 16, 0.8);
+$claret-red: #400010;
+$claret-light: rgba(64, 0, 16, 0.5);
+
+.bread-crumb {
+  position: relative;
+  top: 10rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "Tangerine", sans-serif;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  .links {
+    grid-column: 2 / 18;
+    grid-row: 1;
+    .bread-crumb-list {
+      font-family: "Merriweather";
+      display: flex;
+      gap: 2rem;
+      color: $claret-light;
+      list-style-type: none;
+      a {
+        font-size: 3.2rem;
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          color: $claret-red;
+          transition: all 0.4s;
+        }
+      }
+      li {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        svg {
+          fill: $claret-light;
+          width: 1.6rem;
+          width: 1.6rem;
+        }
+      }
+    }
+  }
+  .page-title {
+    grid-column: 2/18;
+    grid-row: 2;
+    color: $claret-red;
+    font-size: 12rem;
+  }
+}
