@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:wght@400;700&family=Tangerine:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+$white-bg: #f9f7f5;
+$red-bg: #64313e;
+$red-text: rgba(64, 0, 16, 0.8);
+
+body {
+  background-color: black;
+  color: black;
+  font-family: "Tangerine", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}

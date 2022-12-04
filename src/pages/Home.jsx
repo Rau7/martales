@@ -1,35 +1,15 @@
 import React from "react";
 import "../styles/home.scss";
-import "../styles/navbar.scss";
-import "../styles/footer.scss";
 import top1 from "../images/Ornament_01.webp";
 import bot1 from "../images/Ornament_02.webp";
 import footerbg from "../images/footer-bg.webp";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
     <>
-      <header>
-        <nav>
-          <ul className="nav-list">
-            <li className="nav-item active">
-              <a href="/">Home</a>
-            </li>
-            <li className="nav-item">
-              <a href="#">La Nostria Storia</a>
-            </li>
-            <li className="nav-item">
-              <a href="#">Il Matrimonio</a>
-            </li>
-            <li className="nav-item">
-              <a href="#">RSVP</a>
-            </li>
-            <li className="nav-item">
-              <a href="#">Foto</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Navbar />
       <main>
         <section className="hero-sec">
           <div className="hero-bg"></div>
@@ -60,7 +40,7 @@ function Home() {
           </div>
         </section>
       </main>
-      <footer>
+      {/* <footer>
         <div className="footer-container">
           <div className="footer-cont">
             <div className="footer-links">
@@ -95,7 +75,8 @@ function Home() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
+      <Footer />
     </>
   );
 }
