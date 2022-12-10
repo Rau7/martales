@@ -4,6 +4,7 @@ footer {
   background-size: cover;
   background-image: url("../images/footer-bg.webp");
   background-repeat: no-repeat;
+  z-index: 99;
   .footer-container {
     padding-left: 10rem;
     padding-top: 10rem;

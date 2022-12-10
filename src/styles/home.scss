@@ -9,7 +9,7 @@ $white-bg: #f9f7f5;
     position: absolute;
     top: 0;
     left: 0;
-    height: 150vh;
+    height: 151vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -22,6 +22,7 @@ $white-bg: #f9f7f5;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     z-index: 2;
     .hero {
       width: 70%;
@@ -83,3 +84,194 @@ $white-bg: #f9f7f5;
     }
   }
 }
+
+/* counter */
+.date-area {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  z-index: 99;
+}
+.show-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  .countdown-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid $red-heading;
+    border-radius: 8px;
+    padding: 3.5rem 7.5rem;
+    background-color: $white-bg;
+    p {
+      font-size: 7.5rem;
+      margin-bottom: 2.5rem;
+    }
+    span {
+      font-size: 4rem;
+    }
+  }
+}
+
+//end of counter
+
+// home rsvp begin
+
+.home-rsvp-sec {
+  background: rgba(64, 0, 16, 0.8);
+  .home-rsvp-container {
+    padding-left: 10rem;
+    padding-top: 10rem;
+    padding-right: 7rem;
+    padding-bottom: 10rem;
+    .hrsvp {
+      h1 {
+        color: white;
+        font-family: "Tangerine", cursive;
+        font-weight: 700;
+        font-size: 9.6rem;
+      }
+      p {
+        margin-top: 3.5rem;
+        color: white;
+        font-family: "Tangerine", cursive;
+        font-weight: 700;
+        font-size: 3.8rem;
+      }
+      .hrsvp-btn-area {
+        margin-top: 3.5rem;
+        .hrsvp-btn {
+          display: inline-block;
+          padding: 2.4rem 4rem;
+          font-weight: 900;
+          font-family: "Merriweather", sans-serif;
+          font-size: 1.6rem;
+          background-color: #400010;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+          border: 1px solid #d4af37;
+          border-radius: 8px;
+          transition: all 0.3s;
+        }
+        .hrsvp-btn:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+// home rsvp end
+
+// start of benvenuti
+
+.ben-sec {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  .ben-container {
+    .benvenuti {
+      .ben-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+          font-family: "Tangerine", cursive;
+          font-weight: 400;
+          font-size: 13rem;
+          text-align: center;
+          color: #400010;
+          letter-spacing: 5%;
+        }
+        img {
+          height: 7rem;
+          width: auto;
+        }
+      }
+      .ben-grid {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        .ben-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .ben-img-area {
+            width: 40rem;
+            height: 41.5rem;
+            border-radius: 1rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            background-repeat: no-repeat;
+          }
+          .ben-img-area.img1 {
+            background-image: url("../images/Couple_03.webp");
+          }
+          .ben-img-area.img2 {
+            background-image: url("../images/Logo_01.webp");
+          }
+          .ben-img-area.img3 {
+            background-image: url("../images/Chappel_01.webp");
+          }
+          .ben-nav-btn-area {
+            margin-top: 5rem;
+            .ben-nav-link {
+              width: 20rem;
+              height: 5.8rem;
+              background-color: #400010;
+              color: white;
+              font-weight: 900;
+              font-family: "Merriweather", sans-serif;
+              text-align: center;
+              font-size: 1.6rem;
+              padding: 1rem 4rem;
+              text-decoration: none;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+      .ben-wrt {
+        margin-top: 7.5rem;
+        h2 {
+          font-family: "Tangerine", cursive;
+          font-weight: 400;
+          font-size: 6.4rem;
+          text-align: center;
+          color: #400010;
+        }
+        h1 {
+          margin-top: 3.5rem;
+          font-family: "Tangerine", cursive;
+          font-weight: 700;
+          font-size: 6.4rem;
+          text-align: center;
+          color: #400010;
+        }
+      }
+    }
+  }
+}
+
+// end of benvenuti
+
+//couple sec start
+
+.couple-sec {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/homebg.svg");
+  height: 140rem;
+  width: auto;
+}
+
+//couple sec end
