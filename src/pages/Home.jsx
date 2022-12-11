@@ -51,6 +51,7 @@ function Home() {
         </section>
         <section className="couple-sec">
           <div className="couple-cont">
+            <div className="couple-main-img"></div>
             <div className="couple-area">
               <h1>
                 “Non possiamo scegliere il nostro <br /> destino, ma possiamo
@@ -63,23 +64,14 @@ function Home() {
                 </div>
                 <div className="wedding-cards">
                   <div className="card-item">
-                    <div className="card-wrt">
-                      <p>
-                        L'amore è quando la felicità di un'altra <br /> persona
-                        è più importante della tua. <br /> (H. Jackson Brown)
-                      </p>
-                      <div className="card-divider"></div>
-                      <div className="card-footer">
-                        <p>Alessandro Baiano</p>
-                        <span>Sposo</span>
-                      </div>
+                    <div className="card-img">
+                      <img src={pot} alt="marts" />
                     </div>
                     <div className="card-wrt">
                       <p>
-                        È in questo che consiste il vero amore: lasciare che{" "}
-                        <br /> una persona sia ciò che davvero è. La maggior{" "}
-                        <br /> parte delle persone ti ama per quello che
-                        pretendono tu sia. <br /> (Jim Morrison)
+                        L'amore è quando la felicità di un'altra <br /> persona
+                        è più importante della tua. <br />
+                        <br /> (H. Jackson Brown)
                       </p>
                       <div className="card-divider"></div>
                       <div className="card-footer">
@@ -88,11 +80,31 @@ function Home() {
                       </div>
                     </div>
                   </div>
+                  <div className="card-item v2">
+                    <div className="card-img">
+                      <img src={pot} alt="marts" />
+                    </div>
+                    <div className="card-wrt">
+                      <p>
+                        È in questo che consiste il vero amore: lasciare che{" "}
+                        <br /> una persona sia ciò che davvero è. La maggior{" "}
+                        <br /> parte delle persone ti ama per quello che
+                        pretendono tu sia. <br />
+                        <br /> (Jim Morrison)
+                      </p>
+                      <div className="card-divider"></div>
+                      <div className="card-footer">
+                        <p>Marta Bizzarro</p>
+                        <span>Sposa</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <section className="seperator-sec"></section>
         <section className="ben-sec">
           <div className="ben-container">
             <div className="benvenuti">
