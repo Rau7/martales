@@ -8,7 +8,7 @@ const Rsvp = () => {
   return (
     <>
       <Navbar />
-      <BreadCrumb />
+      <BreadCrumb name={"RSVP"} link={"/rsvp"} />
       <div className="form-container">
         <div className="form">
           <form>

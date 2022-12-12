@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/bread_crumb.scss";
 
-const BreadCrumb = () => {
+const BreadCrumb = ({ name, link }) => {
   return (
     <div className="bread-crumb">
       <div className="links">
         <ul className="bread-crumb-list">
           <li>
-            <a href="Home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -15,7 +15,7 @@ const BreadCrumb = () => {
             </svg>
           </li>
           <li>
-            <a href="#page">RSVP</a>
+            <a href={link}>{name}</a>
           </li>
         </ul>
       </div>

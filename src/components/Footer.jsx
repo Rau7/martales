@@ -13,13 +13,13 @@ const Footer = () => {
                   <a href="/">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#">La Nostria Storia</a>
+                  <a href="/ln_storia">La Nostria Storia</a>
                 </li>
                 <li className="nav-item">
                   <a href="#">Il Matrimonio</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#">RSVP</a>
+                  <a href="/rsvp">RSVP</a>
                 </li>
                 <li className="nav-item">
                   <a href="#">Foto</a>

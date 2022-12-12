@@ -1,0 +1,137 @@
+main {
+  .cpl-tline-sec {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    .cpl-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h1 {
+        font-family: "Tangerine", cursive;
+        font-weight: 400;
+        font-size: 13rem;
+        text-align: center;
+        color: #400010;
+        letter-spacing: 5%;
+      }
+      img {
+        height: 7rem;
+        width: auto;
+      }
+    }
+    .cpl-tline-container {
+      padding-left: 10rem;
+      padding-right: 10rem;
+      margin-top: 10rem;
+      margin-bottom: 12rem;
+      .cpl-tline {
+        .tline {
+          .tline-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            gap: 10rem;
+            .img-area {
+              .img-bg {
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                border-radius: 1rem;
+                height: 21rem;
+                width: 40rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                &.c1 {
+                  background-image: url("../images/Couple_06.webp");
+                }
+                &.c2 {
+                  background-image: url("../images/Couple_07.webp");
+                }
+                &.c3 {
+                  background-image: url("../images/Riccardo.webp");
+                }
+                &.c4 {
+                  background-image: url("../images/Family_01.webp");
+                }
+                &.c5 {
+                  background-image: url("../images/Couple_08.webp");
+                }
+              }
+              h1 {
+                font-family: "Tangerine", cursive;
+                font-weight: 700;
+                font-size: 4.8rem;
+                color: #400010;
+                margin-top: 2.5rem;
+              }
+              .fp {
+                margin-top: 0.7rem;
+                font-family: "Tangerine", cursive;
+                font-weight: 400;
+                font-size: 3.2rem;
+                line-height: 3rem;
+                color: #400010;
+              }
+              .sp {
+                margin-top: 2.5rem;
+                font-family: "Tangerine", cursive;
+                font-weight: 400;
+                font-size: 3.2rem;
+                line-height: 3rem;
+                color: #400010;
+              }
+              .tp {
+                margin-top: 2.5rem;
+                font-family: "Tangerine", cursive;
+                font-weight: 400;
+                font-size: 3.2rem;
+                line-height: 3rem;
+                color: #400010;
+              }
+            }
+            .tline-ind {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 5rem;
+
+              .he {
+                position: relative;
+                .big-line {
+                  position: absolute;
+                  top: 120rem;
+                  left: 50%;
+                  border-left: 1px dashed #400010;
+                  width: 0;
+                  height: 250rem;
+                  transform: translate(-50%, -50%);
+                  z-index: 1;
+                }
+                h1 {
+                  font-weight: 900;
+                  font-family: "Merriweather", sans-serif;
+                  font-size: 3.2rem;
+                  text-align: center;
+                  z-index: 2;
+                  width: 19.2rem;
+                  padding: 1.7rem 5rem;
+                  border-radius: 8px;
+                  background-color: rgba(64, 0, 16, 0.8);
+                  color: white;
+                }
+              }
+            }
+          }
+          .tline-item.right {
+            justify-content: end;
+            align-items: flex-start;
+          }
+          .tline-item.left {
+            justify-content: start;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
