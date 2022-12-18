@@ -1,7 +1,20 @@
 import React from "react";
 import "../styles/bread_crumb.scss";
+import { useEffect, useState } from "react";
 
 const BreadCrumb = ({ name, link }) => {
+  const [longName, setLongName] = useState("");
+
+  useEffect(() => {
+    if (name === "Foto") {
+      setLongName("Le Foto del Matrimonio");
+    } else if (name === "Il Matrimonio") {
+      setLongName("Il Nostro Matrimonio");
+    } else {
+      setLongName(name);
+    }
+  }, []);
+
   return (
     <div className="bread-crumb">
       <div className="links">
@@ -20,7 +33,7 @@ const BreadCrumb = ({ name, link }) => {
         </ul>
       </div>
       <div className="page-title">
-        <h1>{name === "Foto" ? "Le Foto del Matrimonio" : name}</h1>
+        <h1>{longName}</h1>
       </div>
     </div>
   );
