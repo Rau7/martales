@@ -1803,6 +1803,19 @@
           indexes: ["mischief managed"],
           action: function () {
             $(".map-base").removeClass("active");
+            var x = document.querySelector(".loader-map");
+            var footer = document.querySelector("footer");
+            var header = document.querySelector("header");
+            var main = document.querySelector("main");
+            var body = document.querySelector("body");
+            x.style.display = "none";
+            footer.style.opacity = 1;
+            main.style.opacity = 1;
+            header.style.opacity = 1;
+            body.style.backgroundImage = "none";
+            body.style.overflow = "scroll";
+            body.style.overflowX = "hidden";
+            body.style.position = "relative";
           },
         },
       ];
