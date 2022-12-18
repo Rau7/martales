@@ -19,7 +19,7 @@ const Navbar = () => {
             <a href="/rsvp">RSVP</a>
           </li>
           <li className="nav-item">
-            <a href="#">Foto</a>
+            <a href="/foto">Foto</a>
           </li>
         </ul>
       </nav>
