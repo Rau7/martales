@@ -20,7 +20,7 @@ const BreadCrumb = ({ name, link }) => {
         </ul>
       </div>
       <div className="page-title">
-        <h1>RSVP</h1>
+        <h1>{name}</h1>
       </div>
     </div>
   );

@@ -39,7 +39,7 @@ function Home() {
                 alt="marta-alessandro-ornament"
               />
               <div className="hero-welcome">
-                <h2>Si Siposano!</h2>
+                <h2>Si Sposano!</h2>
                 <h3>30 Aprile 2023</h3>
                 <h4>Antico Borgo di Sutri</h4>
               </div>

@@ -4,13 +4,69 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BreadCrumb from "../components/BreadCrumb";
 import bot1 from "../images/Ornament_02.webp";
+import couple_05 from "../images/Couple_05.webp";
+import pot from "../images/Logo_01.webp";
 
 function Story() {
   return (
     <>
       <Navbar />
       <BreadCrumb name={"La Nostra Storia"} link={"/ln_storia"} />
-      <main>
+      <main className="story-m">
+        <section className="story-hero">
+          <div></div>
+        </section>
+        <section className="couple-sec">
+          <div className="couple-cont">
+            <div className="couple-area">
+              <h1>
+                “E’ impossibile creare o imitare <br /> l’Amore”
+              </h1>
+              <div className="main-couple">
+                <div className="img-box">
+                  <img src={couple_05} alt="marta-and-alessandro" />
+                </div>
+                <div className="wedding-cards">
+                  <div className="card-item">
+                    <div className="card-img">
+                      <img src={pot} alt="marts" />
+                    </div>
+                    <div className="card-wrt">
+                      <p>
+                        Non voglio che mia figlia segua le mie orme. <br />{" "}
+                        Voglio che prenda il sentiero accanto a me e <br /> vada
+                        oltre ciò che avrei mai potuto immaginare.
+                        <br />
+                      </p>
+                      <div className="card-divider"></div>
+                      <div className="card-footer">
+                        <p>Marcella</p>
+                        <span>Madre della Sposa</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="card-item v2">
+                    <div className="card-img">
+                      <img src={pot} alt="marts" />
+                    </div>
+                    <div className="card-wrt">
+                      <p>
+                        La famiglia è il posto dove l'amore non <br /> finisce
+                        mai, al massimo si moltiplica.
+                        <br />
+                      </p>
+                      <div className="card-divider"></div>
+                      <div className="card-footer">
+                        <p>Maria</p>
+                        <span>Madre dello Sposo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="cpl-tline-sec">
           <div className="cpl-header">
             <h1>Come ci siamo conosciuti</h1>

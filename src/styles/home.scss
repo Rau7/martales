@@ -285,6 +285,7 @@ $white-bg: #f9f7f5;
       top: 0%;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: 2;
     }
     .couple-area {
       display: flex;
