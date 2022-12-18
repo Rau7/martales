@@ -1,4 +1,6 @@
 import React from "react";
+
+import "../styles/map.css";
 import "../styles/home.scss";
 import top1 from "../images/Ornament_01.webp";
 import bot1 from "../images/Ornament_02.webp";
@@ -13,11 +15,726 @@ function Home() {
   const NOW_IN_MS = new Date().getTime();
 
   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+
+  const removeLoading = () => {
+    var x = document.querySelector(".loader-map");
+    var footer = document.querySelector("footer");
+    var header = document.querySelector("header");
+    var main = document.querySelector("main");
+    var body = document.querySelector("body");
+    x.style.display = "none";
+    footer.style.opacity = 1;
+    main.style.opacity = 1;
+    header.style.opacity = 1;
+    body.style.backgroundImage = "none";
+    body.style.overflow = "scroll";
+    body.style.overflowX = "hidden";
+    body.style.position = "relative";
+  };
   return (
     <>
+      <div className="loader-map">
+        <div className="main-content">
+          <div className="map-base">
+            <div className="footsteps footsteps-1">
+              <div className="footstep left" />
+              <div className="footstep right" />
+              <div className="scroll-name">
+                <p>Alessandro</p>
+              </div>
+            </div>
+            <div className="footsteps footsteps-2">
+              <div className="footstep left" />
+              <div className="footstep right" />
+              <div className="scroll-name">
+                <p>Marta</p>
+              </div>
+            </div>
+            <div className="map-flap flap--1">
+              <div className="map-flap__front" />
+              <div className="map-flap__back" />
+            </div>
+            <div className="map-flap flap--2">
+              <div className="map-flap__front" />
+              <div className="map-flap__back" />
+            </div>
+            <div className="map-side side-1">
+              <div
+                className="front"
+                style={{
+                  background:
+                    'url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/8.png")',
+                }}
+              />
+              <div className="back" />
+            </div>
+            <div className="map-side side-2">
+              <div
+                className="front"
+                style={{
+                  background:
+                    'url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/18.png")',
+                }}
+              />
+              <div className="back" />
+            </div>
+            <div className="map-side side-3">
+              <div
+                className="front"
+                style={{
+                  background:
+                    'url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/7.png")',
+                }}
+              />
+              <div className="back" />
+            </div>
+            <div className="map-side side-4">
+              <div
+                className="front"
+                style={{
+                  background:
+                    'url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/10.png")',
+                }}
+              />
+            </div>
+            <div className="map-side side-5">
+              <div
+                className="front"
+                style={{
+                  background:
+                    'url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/6.png")',
+                }}
+              />
+              <div className="back" />
+            </div>
+            <div className="map-side side-6">
+              <div
+                className="front"
+                style={{
+                  background:
+                    'url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/11.png")',
+                }}
+              />
+              <div className="back" />
+            </div>
+          </div>
+        </div>
+        <div className="ldng-btn-area">
+          <button
+            onClick={() => {
+              removeLoading();
+            }}
+            className="ldng-btn"
+          >
+            Home
+          </button>
+        </div>
+        <div id="ui">
+          <div className="track track_1">
+            <div className="foot left">
+              <div className="foot_claw" />
+              <div className="foot_claw" />
+              <div className="foot_claw" />
+            </div>
+            <div className="foot right">
+              <div className="foot_claw" />
+              <div className="foot_claw" />
+              <div className="foot_claw" />
+            </div>
+            <div className="track track_2">
+              <div className="foot left">
+                <div className="foot_claw" />
+                <div className="foot_claw" />
+                <div className="foot_claw" />
+              </div>
+              <div className="foot right">
+                <div className="foot_claw" />
+                <div className="foot_claw" />
+                <div className="foot_claw" />
+              </div>
+              <div className="track track_3">
+                <div className="foot left">
+                  <div className="foot_claw" />
+                  <div className="foot_claw" />
+                  <div className="foot_claw" />
+                </div>
+                <div className="foot right">
+                  <div className="foot_claw" />
+                  <div className="foot_claw" />
+                  <div className="foot_claw" />
+                </div>
+                <div className="track track_4">
+                  <div className="foot left">
+                    <div className="foot_claw" />
+                    <div className="foot_claw" />
+                    <div className="foot_claw" />
+                  </div>
+                  <div className="foot right">
+                    <div className="foot_claw" />
+                    <div className="foot_claw" />
+                    <div className="foot_claw" />
+                  </div>
+                  <div className="track track_5">
+                    <div className="foot left">
+                      <div className="foot_claw" />
+                      <div className="foot_claw" />
+                      <div className="foot_claw" />
+                    </div>
+                    <div className="foot right">
+                      <div className="foot_claw" />
+                      <div className="foot_claw" />
+                      <div className="foot_claw" />
+                    </div>
+                    <div className="track track_6">
+                      <div className="foot left">
+                        <div className="foot_claw" />
+                        <div className="foot_claw" />
+                        <div className="foot_claw" />
+                      </div>
+                      <div className="foot right">
+                        <div className="foot_claw" />
+                        <div className="foot_claw" />
+                        <div className="foot_claw" />
+                      </div>
+                      <div className="track track_7">
+                        <div className="foot left">
+                          <div className="foot_claw" />
+                          <div className="foot_claw" />
+                          <div className="foot_claw" />
+                        </div>
+                        <div className="foot right">
+                          <div className="foot_claw" />
+                          <div className="foot_claw" />
+                          <div className="foot_claw" />
+                        </div>
+                        <div className="track track_8">
+                          <div className="foot left">
+                            <div className="foot_claw" />
+                            <div className="foot_claw" />
+                            <div className="foot_claw" />
+                          </div>
+                          <div className="foot right">
+                            <div className="foot_claw" />
+                            <div className="foot_claw" />
+                            <div className="foot_claw" />
+                          </div>
+                          <div className="track track_9">
+                            <div className="foot left">
+                              <div className="foot_claw" />
+                              <div className="foot_claw" />
+                              <div className="foot_claw" />
+                            </div>
+                            <div className="foot right">
+                              <div className="foot_claw" />
+                              <div className="foot_claw" />
+                              <div className="foot_claw" />
+                            </div>
+                            <div className="track track_10">
+                              <div className="foot left">
+                                <div className="foot_claw" />
+                                <div className="foot_claw" />
+                                <div className="foot_claw" />
+                              </div>
+                              <div className="foot right">
+                                <div className="foot_claw" />
+                                <div className="foot_claw" />
+                                <div className="foot_claw" />
+                              </div>
+                              <div className="track track_11">
+                                <div className="foot left">
+                                  <div className="foot_claw" />
+                                  <div className="foot_claw" />
+                                  <div className="foot_claw" />
+                                </div>
+                                <div className="foot right">
+                                  <div className="foot_claw" />
+                                  <div className="foot_claw" />
+                                  <div className="foot_claw" />
+                                </div>
+                                <div className="track track_12">
+                                  <div className="foot left">
+                                    <div className="foot_claw" />
+                                    <div className="foot_claw" />
+                                    <div className="foot_claw" />
+                                  </div>
+                                  <div className="foot right">
+                                    <div className="foot_claw" />
+                                    <div className="foot_claw" />
+                                    <div className="foot_claw" />
+                                  </div>
+                                  <div className="track track_13">
+                                    <div className="foot left">
+                                      <div className="foot_claw" />
+                                      <div className="foot_claw" />
+                                      <div className="foot_claw" />
+                                    </div>
+                                    <div className="foot right">
+                                      <div className="foot_claw" />
+                                      <div className="foot_claw" />
+                                      <div className="foot_claw" />
+                                    </div>
+                                    <div className="track track_14">
+                                      <div className="foot left">
+                                        <div className="foot_claw" />
+                                        <div className="foot_claw" />
+                                        <div className="foot_claw" />
+                                      </div>
+                                      <div className="foot right">
+                                        <div className="foot_claw" />
+                                        <div className="foot_claw" />
+                                        <div className="foot_claw" />
+                                      </div>
+                                      <div className="track track_15">
+                                        <div className="foot left">
+                                          <div className="foot_claw" />
+                                          <div className="foot_claw" />
+                                          <div className="foot_claw" />
+                                        </div>
+                                        <div className="foot right">
+                                          <div className="foot_claw" />
+                                          <div className="foot_claw" />
+                                          <div className="foot_claw" />
+                                        </div>
+                                        <div className="track track_16">
+                                          <div className="foot left">
+                                            <div className="foot_claw" />
+                                            <div className="foot_claw" />
+                                            <div className="foot_claw" />
+                                          </div>
+                                          <div className="foot right">
+                                            <div className="foot_claw" />
+                                            <div className="foot_claw" />
+                                            <div className="foot_claw" />
+                                          </div>
+                                          <div className="track track_17">
+                                            <div className="foot left">
+                                              <div className="foot_claw" />
+                                              <div className="foot_claw" />
+                                              <div className="foot_claw" />
+                                            </div>
+                                            <div className="foot right">
+                                              <div className="foot_claw" />
+                                              <div className="foot_claw" />
+                                              <div className="foot_claw" />
+                                            </div>
+                                            <div className="track track_18">
+                                              <div className="foot left">
+                                                <div className="foot_claw" />
+                                                <div className="foot_claw" />
+                                                <div className="foot_claw" />
+                                              </div>
+                                              <div className="foot right">
+                                                <div className="foot_claw" />
+                                                <div className="foot_claw" />
+                                                <div className="foot_claw" />
+                                              </div>
+                                              <div className="track track_19">
+                                                <div className="foot left">
+                                                  <div className="foot_claw" />
+                                                  <div className="foot_claw" />
+                                                  <div className="foot_claw" />
+                                                </div>
+                                                <div className="foot right">
+                                                  <div className="foot_claw" />
+                                                  <div className="foot_claw" />
+                                                  <div className="foot_claw" />
+                                                </div>
+                                                <div className="track track_20">
+                                                  <div className="foot left">
+                                                    <div className="foot_claw" />
+                                                    <div className="foot_claw" />
+                                                    <div className="foot_claw" />
+                                                  </div>
+                                                  <div className="foot right">
+                                                    <div className="foot_claw" />
+                                                    <div className="foot_claw" />
+                                                    <div className="foot_claw" />
+                                                  </div>
+                                                  <div className="track track_21">
+                                                    <div className="foot left">
+                                                      <div className="foot_claw" />
+                                                      <div className="foot_claw" />
+                                                      <div className="foot_claw" />
+                                                    </div>
+                                                    <div className="foot right">
+                                                      <div className="foot_claw" />
+                                                      <div className="foot_claw" />
+                                                      <div className="foot_claw" />
+                                                    </div>
+                                                    <div className="track track_22">
+                                                      <div className="foot left">
+                                                        <div className="foot_claw" />
+                                                        <div className="foot_claw" />
+                                                        <div className="foot_claw" />
+                                                      </div>
+                                                      <div className="foot right">
+                                                        <div className="foot_claw" />
+                                                        <div className="foot_claw" />
+                                                        <div className="foot_claw" />
+                                                      </div>
+                                                      <div className="track track_23">
+                                                        <div className="foot left">
+                                                          <div className="foot_claw" />
+                                                          <div className="foot_claw" />
+                                                          <div className="foot_claw" />
+                                                        </div>
+                                                        <div className="foot right">
+                                                          <div className="foot_claw" />
+                                                          <div className="foot_claw" />
+                                                          <div className="foot_claw" />
+                                                        </div>
+                                                        <div className="track track_24">
+                                                          <div className="foot left">
+                                                            <div className="foot_claw" />
+                                                            <div className="foot_claw" />
+                                                            <div className="foot_claw" />
+                                                          </div>
+                                                          <div className="foot right">
+                                                            <div className="foot_claw" />
+                                                            <div className="foot_claw" />
+                                                            <div className="foot_claw" />
+                                                          </div>
+                                                          <div className="track track_25">
+                                                            <div className="foot left">
+                                                              <div className="foot_claw" />
+                                                              <div className="foot_claw" />
+                                                              <div className="foot_claw" />
+                                                            </div>
+                                                            <div className="foot right">
+                                                              <div className="foot_claw" />
+                                                              <div className="foot_claw" />
+                                                              <div className="foot_claw" />
+                                                            </div>
+                                                            <div className="track track_26">
+                                                              <div className="foot left">
+                                                                <div className="foot_claw" />
+                                                                <div className="foot_claw" />
+                                                                <div className="foot_claw" />
+                                                              </div>
+                                                              <div className="foot right">
+                                                                <div className="foot_claw" />
+                                                                <div className="foot_claw" />
+                                                                <div className="foot_claw" />
+                                                              </div>
+                                                              <div className="track track_27">
+                                                                <div className="foot left">
+                                                                  <div className="foot_claw" />
+                                                                  <div className="foot_claw" />
+                                                                  <div className="foot_claw" />
+                                                                </div>
+                                                                <div className="foot right">
+                                                                  <div className="foot_claw" />
+                                                                  <div className="foot_claw" />
+                                                                  <div className="foot_claw" />
+                                                                </div>
+                                                                <div className="track track_28">
+                                                                  <div className="foot left">
+                                                                    <div className="foot_claw" />
+                                                                    <div className="foot_claw" />
+                                                                    <div className="foot_claw" />
+                                                                  </div>
+                                                                  <div className="foot right">
+                                                                    <div className="foot_claw" />
+                                                                    <div className="foot_claw" />
+                                                                    <div className="foot_claw" />
+                                                                  </div>
+                                                                  <div className="track track_29">
+                                                                    <div className="foot left">
+                                                                      <div className="foot_claw" />
+                                                                      <div className="foot_claw" />
+                                                                      <div className="foot_claw" />
+                                                                    </div>
+                                                                    <div className="foot right">
+                                                                      <div className="foot_claw" />
+                                                                      <div className="foot_claw" />
+                                                                      <div className="foot_claw" />
+                                                                    </div>
+                                                                    <div className="track track_30">
+                                                                      <div className="foot left">
+                                                                        <div className="foot_claw" />
+                                                                        <div className="foot_claw" />
+                                                                        <div className="foot_claw" />
+                                                                      </div>
+                                                                      <div className="foot right">
+                                                                        <div className="foot_claw" />
+                                                                        <div className="foot_claw" />
+                                                                        <div className="foot_claw" />
+                                                                      </div>
+                                                                      <div className="track track_31">
+                                                                        <div className="foot left">
+                                                                          <div className="foot_claw" />
+                                                                          <div className="foot_claw" />
+                                                                          <div className="foot_claw" />
+                                                                        </div>
+                                                                        <div className="foot right">
+                                                                          <div className="foot_claw" />
+                                                                          <div className="foot_claw" />
+                                                                          <div className="foot_claw" />
+                                                                        </div>
+                                                                        <div className="track track_32">
+                                                                          <div className="foot left">
+                                                                            <div className="foot_claw" />
+                                                                            <div className="foot_claw" />
+                                                                            <div className="foot_claw" />
+                                                                          </div>
+                                                                          <div className="foot right">
+                                                                            <div className="foot_claw" />
+                                                                            <div className="foot_claw" />
+                                                                            <div className="foot_claw" />
+                                                                          </div>
+                                                                          <div className="track track_33">
+                                                                            <div className="foot left">
+                                                                              <div className="foot_claw" />
+                                                                              <div className="foot_claw" />
+                                                                              <div className="foot_claw" />
+                                                                            </div>
+                                                                            <div className="foot right">
+                                                                              <div className="foot_claw" />
+                                                                              <div className="foot_claw" />
+                                                                              <div className="foot_claw" />
+                                                                            </div>
+                                                                            <div className="track track_34">
+                                                                              <div className="foot left">
+                                                                                <div className="foot_claw" />
+                                                                                <div className="foot_claw" />
+                                                                                <div className="foot_claw" />
+                                                                              </div>
+                                                                              <div className="foot right">
+                                                                                <div className="foot_claw" />
+                                                                                <div className="foot_claw" />
+                                                                                <div className="foot_claw" />
+                                                                              </div>
+                                                                              <div className="track track_35">
+                                                                                <div className="foot left">
+                                                                                  <div className="foot_claw" />
+                                                                                  <div className="foot_claw" />
+                                                                                  <div className="foot_claw" />
+                                                                                </div>
+                                                                                <div className="foot right">
+                                                                                  <div className="foot_claw" />
+                                                                                  <div className="foot_claw" />
+                                                                                  <div className="foot_claw" />
+                                                                                </div>
+                                                                                <div className="track track_36">
+                                                                                  <div className="foot left">
+                                                                                    <div className="foot_claw" />
+                                                                                    <div className="foot_claw" />
+                                                                                    <div className="foot_claw" />
+                                                                                  </div>
+                                                                                  <div className="foot right">
+                                                                                    <div className="foot_claw" />
+                                                                                    <div className="foot_claw" />
+                                                                                    <div className="foot_claw" />
+                                                                                  </div>
+                                                                                  <div className="track track_37">
+                                                                                    <div className="foot left">
+                                                                                      <div className="foot_claw" />
+                                                                                      <div className="foot_claw" />
+                                                                                      <div className="foot_claw" />
+                                                                                    </div>
+                                                                                    <div className="foot right">
+                                                                                      <div className="foot_claw" />
+                                                                                      <div className="foot_claw" />
+                                                                                      <div className="foot_claw" />
+                                                                                    </div>
+                                                                                    <div className="track track_38">
+                                                                                      <div className="foot left">
+                                                                                        <div className="foot_claw" />
+                                                                                        <div className="foot_claw" />
+                                                                                        <div className="foot_claw" />
+                                                                                      </div>
+                                                                                      <div className="foot right">
+                                                                                        <div className="foot_claw" />
+                                                                                        <div className="foot_claw" />
+                                                                                        <div className="foot_claw" />
+                                                                                      </div>
+                                                                                      <div className="track track_39">
+                                                                                        <div className="foot left">
+                                                                                          <div className="foot_claw" />
+                                                                                          <div className="foot_claw" />
+                                                                                          <div className="foot_claw" />
+                                                                                        </div>
+                                                                                        <div className="foot right">
+                                                                                          <div className="foot_claw" />
+                                                                                          <div className="foot_claw" />
+                                                                                          <div className="foot_claw" />
+                                                                                        </div>
+                                                                                        <div className="track track_40">
+                                                                                          <div className="foot left">
+                                                                                            <div className="foot_claw" />
+                                                                                            <div className="foot_claw" />
+                                                                                            <div className="foot_claw" />
+                                                                                          </div>
+                                                                                          <div className="foot right">
+                                                                                            <div className="foot_claw" />
+                                                                                            <div className="foot_claw" />
+                                                                                            <div className="foot_claw" />
+                                                                                          </div>
+                                                                                          <div className="track track_41">
+                                                                                            <div className="foot left">
+                                                                                              <div className="foot_claw" />
+                                                                                              <div className="foot_claw" />
+                                                                                              <div className="foot_claw" />
+                                                                                            </div>
+                                                                                            <div className="foot right">
+                                                                                              <div className="foot_claw" />
+                                                                                              <div className="foot_claw" />
+                                                                                              <div className="foot_claw" />
+                                                                                            </div>
+                                                                                            <div className="track track_42">
+                                                                                              <div className="foot left">
+                                                                                                <div className="foot_claw" />
+                                                                                                <div className="foot_claw" />
+                                                                                                <div className="foot_claw" />
+                                                                                              </div>
+                                                                                              <div className="foot right">
+                                                                                                <div className="foot_claw" />
+                                                                                                <div className="foot_claw" />
+                                                                                                <div className="foot_claw" />
+                                                                                              </div>
+                                                                                              <div className="track track_43">
+                                                                                                <div className="foot left">
+                                                                                                  <div className="foot_claw" />
+                                                                                                  <div className="foot_claw" />
+                                                                                                  <div className="foot_claw" />
+                                                                                                </div>
+                                                                                                <div className="foot right">
+                                                                                                  <div className="foot_claw" />
+                                                                                                  <div className="foot_claw" />
+                                                                                                  <div className="foot_claw" />
+                                                                                                </div>
+                                                                                                <div className="track track_44">
+                                                                                                  <div className="foot left">
+                                                                                                    <div className="foot_claw" />
+                                                                                                    <div className="foot_claw" />
+                                                                                                    <div className="foot_claw" />
+                                                                                                  </div>
+                                                                                                  <div className="foot right">
+                                                                                                    <div className="foot_claw" />
+                                                                                                    <div className="foot_claw" />
+                                                                                                    <div className="foot_claw" />
+                                                                                                  </div>
+                                                                                                  <div className="track track_45">
+                                                                                                    <div className="foot left">
+                                                                                                      <div className="foot_claw" />
+                                                                                                      <div className="foot_claw" />
+                                                                                                      <div className="foot_claw" />
+                                                                                                    </div>
+                                                                                                    <div className="foot right">
+                                                                                                      <div className="foot_claw" />
+                                                                                                      <div className="foot_claw" />
+                                                                                                      <div className="foot_claw" />
+                                                                                                    </div>
+                                                                                                    <div className="track track_46">
+                                                                                                      <div className="foot left">
+                                                                                                        <div className="foot_claw" />
+                                                                                                        <div className="foot_claw" />
+                                                                                                        <div className="foot_claw" />
+                                                                                                      </div>
+                                                                                                      <div className="foot right">
+                                                                                                        <div className="foot_claw" />
+                                                                                                        <div className="foot_claw" />
+                                                                                                        <div className="foot_claw" />
+                                                                                                      </div>
+                                                                                                      <div className="track track_47">
+                                                                                                        <div className="foot left">
+                                                                                                          <div className="foot_claw" />
+                                                                                                          <div className="foot_claw" />
+                                                                                                          <div className="foot_claw" />
+                                                                                                        </div>
+                                                                                                        <div className="foot right">
+                                                                                                          <div className="foot_claw" />
+                                                                                                          <div className="foot_claw" />
+                                                                                                          <div className="foot_claw" />
+                                                                                                        </div>
+                                                                                                        <div className="track track_48">
+                                                                                                          <div className="foot left">
+                                                                                                            <div className="foot_claw" />
+                                                                                                            <div className="foot_claw" />
+                                                                                                            <div className="foot_claw" />
+                                                                                                          </div>
+                                                                                                          <div className="foot right">
+                                                                                                            <div className="foot_claw" />
+                                                                                                            <div className="foot_claw" />
+                                                                                                            <div className="foot_claw" />
+                                                                                                          </div>
+                                                                                                          <div className="track track_49">
+                                                                                                            <div className="foot left">
+                                                                                                              <div className="foot_claw" />
+                                                                                                              <div className="foot_claw" />
+                                                                                                              <div className="foot_claw" />
+                                                                                                            </div>
+                                                                                                            <div className="foot right">
+                                                                                                              <div className="foot_claw" />
+                                                                                                              <div className="foot_claw" />
+                                                                                                              <div className="foot_claw" />
+                                                                                                            </div>
+                                                                                                            <div className="track track_50">
+                                                                                                              <div className="foot left">
+                                                                                                                <div className="foot_claw" />
+                                                                                                                <div className="foot_claw" />
+                                                                                                                <div className="foot_claw" />
+                                                                                                              </div>
+                                                                                                              <div className="foot right">
+                                                                                                                <div className="foot_claw" />
+                                                                                                                <div className="foot_claw" />
+                                                                                                                <div className="foot_claw" />
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Navbar />
 
-      <main>
+      <main className="homes">
         <section className="hero-sec">
           <div className="hero-bg"></div>
           <div className="hero-container">

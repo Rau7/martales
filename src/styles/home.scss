@@ -265,7 +265,7 @@ $white-bg: #f9f7f5;
 
 //couple sec start
 
-.couple-sec {
+.homes .couple-sec {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -384,3 +384,58 @@ $white-bg: #f9f7f5;
 }
 
 //couple sec end
+
+main,
+header,
+footer,
+#ui {
+  opacity: 0;
+}
+
+.loader-map {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  //animation: slide 2s ease 2s forwards;
+  //animation-iteration-count: 1;
+  opacity: 0;
+}
+
+.ldng-btn-area {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .ldng-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 2.4rem 4rem;
+    font-weight: 900;
+    font-family: "Merriweather", sans-serif;
+    font-size: 1.6rem;
+    background-color: #400010;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    transition: all 0.3s;
+  }
+  .ldng-btn:hover {
+    opacity: 0.8;
+  }
+}
+
+@keyframes slide {
+  from {
+    top: 0;
+  }
+  to {
+    top: -500vw;
+  }
+}
