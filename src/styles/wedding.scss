@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap");
 .wedding-m {
   margin-top: 8.6rem;
   .wedding-hero {
@@ -261,5 +262,129 @@
     height: 20.6rem;
     width: auto;
     margin-bottom: 10rem;
+  }
+
+  .nozze {
+    .nozze-container {
+      .nozze-main {
+        .nozze-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          img {
+            width: 829px;
+            height: 301px;
+            z-index: 1;
+          }
+          h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Tangerine", cursive;
+            font-weight: 700;
+            font-size: 8rem;
+            color: #400010;
+            z-index: 2;
+          }
+        }
+        .cont-1 {
+          margin-top: 2rem;
+          margin-bottom: 8rem;
+          p {
+            text-align: center;
+            font-family: "Tangerine", cursive;
+            font-weight: 700;
+            font-size: 4rem;
+            color: #400010;
+          }
+        }
+        .iban-area {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 796px;
+            height: 496px;
+            z-index: 1;
+          }
+          h1 {
+            font-family: "Walter Turncoat", cursive;
+            text-transform: uppercase;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 2.4rem;
+            font-weight: 400;
+            line-height: 6rem;
+            z-index: 2;
+          }
+        }
+        .cont-2 {
+          margin-top: 2rem;
+          margin-bottom: 8rem;
+          p {
+            text-align: center;
+            font-family: "Tangerine", cursive;
+            font-weight: 700;
+            font-size: 4rem;
+            color: #400010;
+            line-height: 6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .w-rsvp-sec {
+    background: rgba(64, 0, 16, 0.8);
+    .w-rsvp-container {
+      padding-left: 10rem;
+      padding-top: 10rem;
+      padding-right: 7rem;
+      padding-bottom: 10rem;
+      .wrsvp {
+        h1 {
+          color: white;
+          font-family: "Tangerine", cursive;
+          font-weight: 700;
+          font-size: 9.6rem;
+        }
+        p {
+          margin-top: 3.5rem;
+          color: white;
+          font-family: "Tangerine", cursive;
+          font-weight: 700;
+          font-size: 3.8rem;
+        }
+        .wrsvp-btn-area {
+          margin-top: 3.5rem;
+          .wrsvp-btn {
+            display: inline-block;
+            padding: 2.4rem 4rem;
+            font-weight: 900;
+            font-family: "Merriweather", sans-serif;
+            font-size: 1.6rem;
+            background-color: #400010;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            border: 1px solid #d4af37;
+            border-radius: 8px;
+            transition: all 0.3s;
+          }
+          .wrsvp-btn:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
   }
 }
