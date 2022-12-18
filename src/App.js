@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Rsvp from "./pages/Rsvp";
 import Story from "./pages/Story";
 import Foto from "./pages/Foto";
+import Wedding from "./pages/Wedding";
 import "./styles/general.scss";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route exact path="/ln_storia" element={<Story />} />
       <Route exact path="/rsvp" element={<Rsvp />} />
       <Route exact path="/foto" element={<Foto />} />
+      <Route exact path="/il_matrimonio" element={<Wedding />} />
     </Routes>
   );
 }

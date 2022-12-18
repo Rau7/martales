@@ -13,7 +13,7 @@ const Navbar = () => {
             <a href="/ln_storia">La Nostria Storia</a>
           </li>
           <li className="nav-item">
-            <a href="#">Il Matrimonio</a>
+            <a href="/il_matrimonio">Il Matrimonio</a>
           </li>
           <li className="nav-item">
             <a href="/rsvp">RSVP</a>

@@ -16,13 +16,13 @@ const Footer = () => {
                   <a href="/ln_storia">La Nostria Storia</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#">Il Matrimonio</a>
+                  <a href="/il_matrimonio">Il Matrimonio</a>
                 </li>
                 <li className="nav-item">
                   <a href="/rsvp">RSVP</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#">Foto</a>
+                  <a href="/foto">Foto</a>
                 </li>
               </ul>
             </nav>
