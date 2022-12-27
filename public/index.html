@@ -27,18 +27,7 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
       integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
@@ -1794,13 +1783,13 @@
       const artyom = new Artyom();
       var commands = [
         {
-          indexes: ["up to no good"],
+          indexes: ["buone intenzioni"],
           action: function () {
             $(".map-base").addClass("active");
           },
         },
         {
-          indexes: ["mischief managed"],
+          indexes: ["fatto il misfatto"],
           action: function () {
             $(".map-base").removeClass("active");
             var x = document.querySelector(".loader-map");
@@ -1828,7 +1817,7 @@
         setTimeout(function () {
           artyom
             .initialize({
-              lang: "en-GB",
+              lang: "it-IT",
               continuous: true,
               listen: true,
               speed: 1,
@@ -1839,7 +1828,18 @@
         }, 250);
       }
 
-      startContinuousArtyom();
+      $(document).ready(function () {
+        const element = document.querySelector(".loader-map");
+        if (element) {
+          startContinuousArtyom();
+        }
+        const timer = 10000,
+          ui = document.getElementById("ui");
+
+        setInterval(function () {
+          ui.classList.toggle("switch");
+        }, timer);
+      });
     </script>
   </body>
 </html>

@@ -24,6 +24,45 @@ function Wedding() {
   }, []);
   return (
     <>
+      <div className="ball-load">
+        <div>
+          <input type="checkbox" name="checkbox" id="animate" defaultChecked />
+          <label htmlFor="animate">
+            <div className="snitch">
+              <div className="obj">
+                <div className="body">
+                  <div className="flourish" />
+                  <div className="flourish" />
+                  <div className="flourish" />
+                  <div className="flourish">
+                    <div className="line" />
+                    <div className="line" />
+                    <div className="line" />
+                  </div>
+                  <div className="flourish">
+                    <div className="line" />
+                    <div className="line" />
+                    <div className="line" />
+                  </div>
+                </div>
+                <div className="l joint" />
+                <div className="l wing">
+                  <div className="feather" />
+                  <div className="feather" />
+                  <div className="feather" />
+                </div>
+                <div className="r joint" />
+                <div className="r wing">
+                  <div className="feather" />
+                  <div className="feather" />
+                  <div className="feather" />
+                </div>
+              </div>
+              <div className="shadow" />
+            </div>
+          </label>
+        </div>
+      </div>
       <Navbar />
       <BreadCrumb name={"Il Matrimonio"} link={"/il_matrimonio"} />
       <main className="wedding-m">
@@ -165,16 +204,16 @@ function Wedding() {
             </div>
           </div>
         </section>
-        <section className="home-rsvp-sec">
-          <div className="home-rsvp-container">
-            <div className="hrsvp">
+        <section className="w-rsvp-sec">
+          <div className="w-rsvp-container">
+            <div className="wrsvp">
               <h1>Non vediamo l'ora di festeggiare insieme!</h1>
               <p>
                 Si prega gentilmente di rispondere all'invito entro e non oltre
                 il 31 Gennaio 2023, per motivi organizzativi.{" "}
               </p>
-              <div className="hrsvp-btn-area">
-                <a href="#" className="hrsvp-btn">
+              <div className="wrsvp-btn-area">
+                <a href="#" className="wrsvp-btn">
                   RSVP {">"}
                 </a>
               </div>
