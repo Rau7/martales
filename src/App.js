@@ -4,12 +4,13 @@ import Rsvp from "./pages/Rsvp";
 import Story from "./pages/Story";
 import Foto from "./pages/Foto";
 import Wedding from "./pages/Wedding";
-import "./styles/map.css";
 import "./styles/general.scss";
 import "./styles/home.scss";
 import "./styles/mobile1200w.scss";
 import "./styles/mobile992w.scss";
 import "./styles/mobile768w.scss";
+import "./styles/mobile500w.scss";
+import "./styles/navbar.scss";
 function App() {
   return (
     <Routes>

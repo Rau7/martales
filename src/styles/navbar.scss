@@ -36,6 +36,118 @@ header {
   }
 }
 
+.navbar-mob {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+
+  z-index: -1;
+  .nav-mob-con {
+    padding-top: 5.6rem;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../images/footer-bg.webp");
+    color: #d4af37;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav-mob-black {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      .nav-mob-l {
+        .mob-nav-list {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          padding: 0;
+          gap: 10rem;
+          .nav-item {
+            a {
+              font-family: "DM Sans", sans-serif;
+              font-weight: 400;
+              font-size: 6rem;
+              text-align: center;
+              color: #d4af37;
+            }
+          }
+          .nav-item.active {
+            a {
+              font-family: "DM Sans", sans-serif;
+              font-weight: 400;
+              font-size: 6rem;
+              text-align: center;
+              color: #d4af37;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.nav-mob {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  z-index: 20;
+  position: fixed;
+  top: 5.6rem;
+  right: 5.6rem;
+  .nav-mob-ham {
+    color: #4d0013;
+    background-color: #d4af37;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    .container {
+      display: inline-block;
+      cursor: pointer;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 30px;
+      height: 4px;
+      background-color: #4d0013;
+      margin: 6px 0;
+      transition: 0.4s;
+      border-radius: 100px;
+    }
+
+    .change .bar1 {
+      transform: translate(0, 10px) rotate(-45deg);
+      background-color: #4d0013;
+    }
+
+    .change .bar2 {
+      opacity: 0;
+      background-color: #4d0013;
+    }
+
+    .change .bar3 {
+      transform: translate(0, -10px) rotate(45deg);
+      background-color: #4d0013;
+    }
+    img {
+      width: 3rem;
+      height: 2.1rem;
+      cursor: pointer;
+    }
+
+    img:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
 .nav-item.active {
   a {
     color: #4d0013;
