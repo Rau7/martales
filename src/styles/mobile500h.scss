@@ -1,16 +1,16 @@
 //STORY AREA
-@media screen and (max-width: 992px) {
+@media screen and (max-height: 500px) {
   .story-m {
-    margin-top: 8.6rem;
+    margin-top: 3rem;
     .story-hero {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 15rem;
-      margin-bottom: 12rem;
+      margin-top: -5rem;
+      margin-bottom: 5rem;
       div {
-        height: 56rem;
-        width: 120rem;
+        height: 30rem;
+        width: 100%;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -20,8 +20,8 @@
       }
     }
     .cpl-tline-sec {
-      margin-top: 10rem;
-      margin-bottom: 10rem;
+      margin-top: 6rem;
+      margin-bottom: 6rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -34,35 +34,41 @@
         h1 {
           font-family: "Tangerine", cursive;
           font-weight: 400;
-          font-size: 9rem;
+          font-size: 5rem;
           text-align: center;
           color: #400010;
           letter-spacing: 5%;
         }
         img {
-          height: 7rem;
+          height: 3rem;
           width: auto;
         }
       }
       .cpl-tline-container {
         width: 100%;
-        margin-top: 10rem;
+        margin-top: 0rem;
         margin-bottom: 12rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         .cpl-tline {
           .tline {
+            margin-top: -3rem;
             .tline-item {
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr;
-
-              gap: 0rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              gap: 5rem;
               .img-area {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
                 .img-bg {
                   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                   border-radius: 1rem;
                   height: 21rem;
-                  width: 40rem;
+                  width: 100%;
                   background-repeat: no-repeat;
                   background-position: center center;
                   background-size: cover;
@@ -85,7 +91,7 @@
                 h1 {
                   font-family: "Tangerine", cursive;
                   font-weight: 700;
-                  font-size: 4.8rem;
+                  font-size: 4rem;
                   color: #400010;
                   margin-top: 2.5rem;
                 }
@@ -93,30 +99,30 @@
                   margin-top: 0.7rem;
                   font-family: "Tangerine", cursive;
                   font-weight: 400;
-                  font-size: 3.2rem;
-                  line-height: 3rem;
+                  font-size: 2.8rem;
+                  line-height: 2.8rem;
                   color: #400010;
                 }
                 .sp {
                   margin-top: 2.5rem;
                   font-family: "Tangerine", cursive;
                   font-weight: 400;
-                  font-size: 3.2rem;
-                  line-height: 3rem;
+                  font-size: 2.8rem;
+                  line-height: 2.8rem;
                   color: #400010;
                 }
                 .tp {
                   margin-top: 2.5rem;
                   font-family: "Tangerine", cursive;
                   font-weight: 400;
-                  font-size: 3.2rem;
-                  line-height: 3rem;
+                  font-size: 2.8rem;
+                  line-height: 2.8rem;
                   color: #400010;
                 }
               }
               .empty-div {
-                width: 40rem;
-                height: 100%;
+                width: 35rem;
+                height: 0px;
               }
               .tline-ind {
                 display: flex;
@@ -127,6 +133,7 @@
                 .he {
                   position: relative;
                   .big-line {
+                    display: none;
                     position: absolute;
                     top: 120rem;
                     left: 50%;
@@ -139,11 +146,11 @@
                   h1 {
                     font-weight: 900;
                     font-family: "Merriweather", sans-serif;
-                    font-size: 3.2rem;
+                    font-size: 2.6rem;
                     text-align: center;
                     z-index: 2;
-                    width: 19.2rem;
-                    padding: 1.7rem 5rem;
+                    width: 13.2rem;
+                    padding: 1.7rem 2rem;
                     border-radius: 8px;
                     background-color: rgba(64, 0, 16, 0.8);
                     color: white;
@@ -152,12 +159,21 @@
               }
             }
             .tline-item.right {
-              justify-content: end;
-              align-items: flex-start;
+              text-align: center;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              padding-left: 2rem;
+              padding-right: 2rem;
             }
             .tline-item.left {
-              justify-content: start;
-              align-items: flex-start;
+              width: 100%;
+              flex-direction: column-reverse;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              padding-left: 2rem;
+              padding-right: 2rem;
             }
           }
         }
@@ -166,94 +182,119 @@
   }
 
   .couple-sec {
+    display: none;
+  }
+
+  .story-m .couple-sec-mob {
+    display: block;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-image: url("../images/homebg.svg");
-    height: 110rem;
+    height: 100%;
     width: auto;
     .couple-cont {
       position: relative;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      .couple-main-img {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("../images/Couple_01.webp");
+        height: 59rem;
+        width: 110rem;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+      }
       .couple-area {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 8rem;
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        gap: 4rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
         h1 {
           font-family: "Tangerine", cursive;
           font-weight: 700;
-          font-size: 7.5rem;
+          font-size: 4rem;
           text-align: center;
           color: white;
-          line-height: 7rem;
+          line-height: 4rem;
         }
         .main-couple {
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          gap: 10rem;
+          gap: 0rem;
+          padding-left: 2.5rem;
+          padding-right: 2.5rem;
           .img-box {
+            margin-top: 8rem;
             img {
-              width: 36rem;
-              height: 65rem;
+              width: auto;
+              height: 48rem;
               border-radius: 1rem;
             }
           }
-          .wedding-cards {
-            .card-item {
-              background-color: white;
-              border-radius: 0.8rem;
-              position: relative;
-              .card-img {
-                position: absolute;
-                top: 0%;
-                left: 13%;
-                transform: translate(-50%, -50%);
-                img {
-                  width: 9.1rem;
-                  height: 9.2rem;
-                }
+          .card-item {
+            background-color: white;
+            border-radius: 0.8rem;
+            position: relative;
+            width: 100%;
+            .card-img {
+              position: absolute;
+              top: 0%;
+              left: 13%;
+              transform: translate(-50%, -50%);
+              img {
+                width: 9.1rem;
+                height: 9.2rem;
               }
-              .card-wrt {
-                padding: 5.5rem 2.4rem 2.4rem 2.4rem;
+            }
+            .card-wrt {
+              padding: 4.5rem 1.5rem 1.2rem 1.5rem;
+              width: 100%;
+              p {
+                font-family: "Tangerine", cursive;
+                font-weight: 400;
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+                color: #400010;
+              }
+              .card-divider {
+                height: 1px;
                 width: 100%;
+                background-color: #e6e6e6;
+                margin-top: 2.4rem;
+                margin-bottom: 2.4rem;
+              }
+              .card-footer {
                 p {
                   font-family: "Tangerine", cursive;
-                  font-weight: 400;
-                  font-size: 3.5rem;
-                  line-height: 3rem;
+                  font-weight: 700;
+                  font-size: 2.4rem;
+                  line-height: 2.4rem;
                   color: #400010;
+                  margin-bottom: 0.8rem;
                 }
-                .card-divider {
-                  height: 1px;
-                  width: 100%;
-                  background-color: #e6e6e6;
-                  margin-top: 2.4rem;
-                  margin-bottom: 2.4rem;
-                }
-                .card-footer {
-                  p {
-                    font-family: "Tangerine", cursive;
-                    font-weight: 700;
-                    font-size: 2.8rem;
-                    color: #400010;
-                    margin-bottom: 0.8rem;
-                  }
-                  span {
-                    font-family: "Tangerine", cursive;
-                    font-weight: 400;
-                    font-size: 2.8rem;
-                    color: #400010;
-                  }
+                span {
+                  font-family: "Tangerine", cursive;
+                  font-weight: 400;
+                  font-size: 2.4rem;
+                  line-height: 2.4rem;
+                  color: #400010;
                 }
               }
             }
-            .card-item.v2 {
-              margin-top: 8rem;
-            }
+          }
+          .card-item.v2 {
+            margin-top: 8rem;
           }
         }
       }
@@ -262,19 +303,19 @@
 }
 
 //INVITE
-@media screen and (max-width: 992px) {
+@media screen and (max-height: 500px) {
   @import url("https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap");
   .wedding-m {
-    margin-top: 8.6rem;
+    margin-top: 4rem;
     .wedding-hero {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 15rem;
-      margin-bottom: 12rem;
+      margin-top: -3rem;
+      margin-bottom: 6rem;
       div {
-        height: 56rem;
-        width: 142rem;
+        height: 25rem;
+        width: 100%;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -292,7 +333,7 @@
         text-align: center;
         font-family: "Tangerine", cursive;
         font-weight: 700;
-        font-size: 8rem;
+        font-size: 6rem;
         color: rgba(64, 0, 16, 0.8);
       }
     }
@@ -312,40 +353,45 @@
               text-align: center;
               font-family: "Tangerine", cursive;
               font-weight: 700;
-              font-size: 8rem;
+              font-size: 5rem;
               color: rgba(64, 0, 16, 0.8);
             }
             img {
-              width: 350px;
-              height: 70.94px;
+              width: auto;
+              height: 3rem;
             }
           }
           p {
             text-align: center;
             font-family: "Tangerine", cursive;
             font-weight: 400;
-            font-size: 4rem;
+            font-size: 3rem;
             color: rgba(64, 0, 16, 0.8);
-            margin-top: 4rem;
-            margin-bottom: 6rem;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
           }
           .loc-list {
-            width: 92rem;
+            width: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
             .loc-item {
               display: flex;
               justify-content: center;
+              flex-direction: column-reverse;
+              align-items: center;
               gap: 6rem;
               p {
                 text-align: center;
                 font-family: "Tangerine", cursive;
                 font-weight: 400;
-                font-size: 4rem;
+                font-size: 3rem;
                 color: rgba(64, 0, 16, 0.8);
               }
 
               .loc-img-1 {
-                width: 427.27px;
-                height: 293.26px;
+                text-align: center;
+                width: 100%;
+                height: 23rem;
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
@@ -355,13 +401,15 @@
             .loc-item-rev {
               display: flex;
               justify-content: center;
+              align-items: center;
+              flex-direction: column;
               gap: 6rem;
-              margin-top: 8rem;
+              margin-top: 2rem;
               p {
                 text-align: center;
                 font-family: "Tangerine", cursive;
                 font-weight: 400;
-                font-size: 4rem;
+                font-size: 3rem;
                 color: rgba(64, 0, 16, 0.8);
               }
 
@@ -380,7 +428,7 @@
     }
     .divider {
       width: 100%;
-      height: 263.61px;
+      height: 10rem;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -388,8 +436,8 @@
       margin-bottom: 5rem;
     }
     .wed-tline-sec {
-      margin-top: 10rem;
-      margin-bottom: 10rem;
+      margin-top: 0rem;
+      margin-bottom: 5rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -402,38 +450,44 @@
         h1 {
           font-family: "Tangerine", cursive;
           font-weight: 400;
-          font-size: 8rem;
+          font-size: 5rem;
           text-align: center;
           color: #400010;
           letter-spacing: 5%;
         }
         img {
-          height: 7rem;
+          height: 3rem;
           width: auto;
         }
       }
       .wed-tline-container {
         width: 100%;
-        margin-top: 10rem;
+        margin-top: 2rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         .wed-tline {
           .empty-div {
-            width: 40rem;
+            width: 35rem;
             height: 100%;
           }
           .tline {
             .tline-item {
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr;
-
-              gap: 0rem;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+              gap: 5rem;
               .img-area {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
                 .img-bg {
                   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                   border-radius: 1rem;
-                  height: 21rem;
-                  width: 40rem;
+                  height: 20rem;
+                  width: 100%;
                   background-repeat: no-repeat;
                   background-position: center center;
                   background-size: cover;
@@ -450,7 +504,7 @@
                 h1 {
                   font-family: "Tangerine", cursive;
                   font-weight: 700;
-                  font-size: 4.8rem;
+                  font-size: 4rem;
                   color: #400010;
                   margin-top: 2.5rem;
                 }
@@ -458,7 +512,7 @@
                   margin-top: 0.7rem;
                   font-family: "Tangerine", cursive;
                   font-weight: 400;
-                  font-size: 3.2rem;
+                  font-size: 2.8rem;
                   line-height: 3rem;
                   color: #400010;
                 }
@@ -466,7 +520,7 @@
                   margin-top: 2.5rem;
                   font-family: "Tangerine", cursive;
                   font-weight: 400;
-                  font-size: 3.2rem;
+                  font-size: 2.8rem;
                   line-height: 3rem;
                   color: #400010;
                 }
@@ -474,7 +528,7 @@
                   margin-top: 2.5rem;
                   font-family: "Tangerine", cursive;
                   font-weight: 400;
-                  font-size: 3.2rem;
+                  font-size: 2.8rem;
                   line-height: 3rem;
                   color: #400010;
                 }
@@ -483,11 +537,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 5rem;
+                margin-top: 2rem;
 
                 .he {
                   position: relative;
                   .big-line {
+                    display: none;
                     position: absolute;
                     top: 60rem;
                     left: 50%;
@@ -500,11 +555,11 @@
                   h1 {
                     font-weight: 900;
                     font-family: "Merriweather", sans-serif;
-                    font-size: 3.2rem;
+                    font-size: 2rem;
                     text-align: center;
                     z-index: 2;
-                    width: 19.2rem;
-                    padding: 1.7rem 5rem;
+                    width: 10rem;
+                    padding: 1.7rem 1.5rem;
                     border-radius: 8px;
                     background-color: rgba(64, 0, 16, 0.8);
                     color: white;
@@ -513,12 +568,13 @@
               }
             }
             .tline-item.right {
-              justify-content: end;
-              align-items: flex-start;
+              justify-content: center;
+              align-items: center;
             }
             .tline-item.left {
-              justify-content: start;
-              align-items: flex-start;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column-reverse;
             }
           }
         }
@@ -530,9 +586,9 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      height: 20.6rem;
+      height: 10rem;
       width: auto;
-      margin-bottom: 10rem;
+      margin-bottom: 2.5rem;
     }
 
     .nozze {
@@ -544,8 +600,8 @@
             align-items: center;
             position: relative;
             img {
-              width: 829px;
-              height: 301px;
+              width: 100%;
+              height: 17.5rem;
               z-index: 1;
             }
             h1 {
@@ -557,20 +613,23 @@
               transform: translate(-50%, -50%);
               font-family: "Tangerine", cursive;
               font-weight: 700;
-              font-size: 8rem;
+              font-size: 5rem;
               color: #400010;
               z-index: 2;
             }
           }
           .cont-1 {
             margin-top: 2rem;
-            margin-bottom: 8rem;
+            margin-bottom: 4rem;
             p {
               text-align: center;
               font-family: "Tangerine", cursive;
               font-weight: 700;
-              font-size: 4rem;
+              font-size: 3rem;
               color: #400010;
+              br {
+                display: none;
+              }
             }
           }
           .iban-area {
@@ -579,7 +638,7 @@
             justify-content: center;
             align-items: center;
             img {
-              width: 796px;
+              width: 100%;
               height: 496px;
               z-index: 1;
             }
@@ -592,22 +651,27 @@
               transform: translate(-50%, -50%);
               text-align: center;
               color: white;
-              font-size: 1.8rem;
+              font-size: 1.4rem;
               font-weight: 400;
-              line-height: 6rem;
+              line-height: 4.5rem;
               z-index: 2;
             }
           }
           .cont-2 {
             margin-top: 2rem;
-            margin-bottom: 8rem;
+            margin-bottom: 4rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
             p {
               text-align: center;
               font-family: "Tangerine", cursive;
               font-weight: 700;
-              font-size: 4rem;
+              font-size: 3rem;
               color: #400010;
-              line-height: 6rem;
+              line-height: 4rem;
+              br {
+                display: none;
+              }
             }
           }
         }
@@ -618,31 +682,31 @@
       background: rgba(64, 0, 16, 0.8);
       .w-rsvp-container {
         padding-left: 2.5rem;
-        padding-top: 10rem;
+        padding-top: 5rem;
         padding-right: 2.5rem;
-        padding-bottom: 10rem;
+        padding-bottom: 5rem;
         .wrsvp {
           h1 {
             color: white;
             font-family: "Tangerine", cursive;
             font-weight: 700;
-            font-size: 6rem;
+            font-size: 5rem;
           }
           p {
             margin-top: 3.5rem;
             color: white;
             font-family: "Tangerine", cursive;
             font-weight: 700;
-            font-size: 3.8rem;
+            font-size: 3.2rem;
           }
           .wrsvp-btn-area {
             margin-top: 3.5rem;
             .wrsvp-btn {
               display: inline-block;
-              padding: 2.4rem 4rem;
+              padding: 1.2rem 2rem;
               font-weight: 900;
               font-family: "Merriweather", sans-serif;
-              font-size: 1.6rem;
+              font-size: 1.4rem;
               background-color: #400010;
               text-decoration: none;
               text-transform: uppercase;
@@ -659,10 +723,18 @@
       }
     }
   }
+
+  .snitch {
+    position: relative;
+    text-align: center;
+    width: 7.5rem;
+    height: 7.5rem;
+    cursor: pointer;
+  }
 }
 
 //RSVP
-@media screen and (max-width: 992px) {
+@media screen and (max-height: 500px) {
   .rsvp-m {
     .rsvp-mes-sec {
       margin-top: 13rem;
@@ -673,12 +745,14 @@
       .rsvp-mes-container {
         .mes-grid {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr;
+          gap: 5rem;
           .mes-form {
             padding: 9.5rem 10.4rem;
             background: rgba(64, 0, 16, 0.75);
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
+            border-radius: 10px;
           }
           .mes-info {
             padding: 9.5rem 10.4rem;
@@ -692,11 +766,12 @@
             align-items: center;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
+            border-radius: 10px;
             .mes-header {
               p {
                 font-family: "Tangerine", cursive;
                 font-weight: 400;
-                font-size: 4.8rem;
+                font-size: 3.4rem;
                 line-height: 4rem;
                 color: white;
                 text-align: center;
@@ -705,8 +780,8 @@
               h2 {
                 font-family: "Tangerine", cursive;
                 font-weight: 700;
-                font-size: 6rem;
-                line-height: 6rem;
+                font-size: 4.5rem;
+                line-height: 4rem;
                 color: white;
                 text-align: center;
                 margin-bottom: 3rem;
@@ -719,8 +794,8 @@
               h3 {
                 font-family: "Tangerine", cursive;
                 font-weight: 700;
-                font-size: 5.2rem;
-                line-height: 3.2rem;
+                font-size: 4rem;
+                line-height: 4rem;
                 color: white;
                 text-align: center;
                 margin-bottom: 8rem;
@@ -771,13 +846,13 @@
           h1 {
             font-family: "Tangerine", cursive;
             font-weight: 400;
-            font-size: 7.5rem;
+            font-size: 5rem;
             text-align: center;
             color: #400010;
             letter-spacing: 3px;
           }
           img {
-            height: 7rem;
+            height: 5rem;
             width: auto;
           }
         }
@@ -791,6 +866,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             gap: 5rem;
             .broom {
               width: 40.8rem;
@@ -817,6 +893,7 @@
                 font-weight: 700;
                 font-size: 4.2rem;
                 line-height: 3.2rem;
+                text-align: center;
                 color: #400010;
                 text-decoration-line: underline;
               }
@@ -829,6 +906,7 @@
                 font-weight: 400;
                 font-size: 2rem;
                 line-height: 2.7rem;
+                text-align: center;
                 color: rgba(64, 0, 16, 0.8);
               }
             }
@@ -837,31 +915,32 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column-reverse;
             margin-top: 5rem;
             margin-bottom: 5rem;
             gap: 10rem;
             .broom {
-              width: 40.8rem;
-              height: 24.8rem;
+              height: 100%;
+              width: 30rem;
               transform: rotate(212deg);
               rotate: 180deg;
               margin-right: 2.7rem;
             }
             .bus {
-              width: 35.9rem;
-              height: 40.6rem;
+              height: 100%;
+              width: 30rem;
               margin-right: 5rem;
             }
             .owl {
-              width: 31.4rem;
-              height: 33.5rem;
+              height: 100%;
+              width: 30rem;
               margin-left: 6.7rem;
             }
             .tp-item-wrt {
               h1 {
                 font-family: "Tangerine";
                 font-style: normal;
-                text-align: right;
+                text-align: center;
                 font-weight: 700;
                 font-size: 4.2rem;
                 line-height: 3.2rem;
@@ -872,10 +951,10 @@
                 margin-top: 2.5rem;
                 font-family: "Walter Turncoat", cursive;
                 text-transform: uppercase;
-                text-align: right;
+                text-align: center;
                 font-style: normal;
                 font-weight: 400;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 line-height: 2.7rem;
                 color: rgba(64, 0, 16, 0.8);
               }
@@ -894,7 +973,7 @@
         background-position: center center;
         background-size: cover;
         background-image: url("../images/Map.png");
-        height: 55rem;
+        height: 30rem;
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
@@ -915,23 +994,24 @@
               color: #400010;
               font-weight: 900;
               font-family: "Merriweather", sans-serif;
-              font-size: 2.4rem;
+              font-size: 2rem;
             }
             p {
               margin-top: 0.7rem;
               color: #400010;
               font-weight: 400;
               font-family: "DM Sans", cursive;
-              font-size: 1.6rem;
+              font-size: 1.4rem;
             }
           }
           .add-btn {
             .a-btn {
               display: inline-block;
-              padding: 2.4rem 4rem;
+              padding: 2.4rem 2rem;
               font-weight: 900;
               font-family: "Merriweather", sans-serif;
-              font-size: 1.6rem;
+              font-size: 1.4rem;
+              text-align: center;
               background-color: #400010;
               text-decoration: none;
               text-transform: uppercase;
@@ -946,6 +1026,7 @@
     }
     .team-sec {
       margin-bottom: 10rem;
+      padding-bottom: 10rem;
       .team-cont {
         .team-header {
           display: flex;
@@ -955,13 +1036,13 @@
           h1 {
             font-family: "Tangerine", cursive;
             font-weight: 400;
-            font-size: 7.5rem;
+            font-size: 6rem;
             text-align: center;
             color: #400010;
             letter-spacing: 5%;
           }
           img {
-            height: 7rem;
+            height: 5rem;
             width: auto;
           }
         }
@@ -994,86 +1075,25 @@
 
 //FOOTER
 
-@media screen and (max-width: 992px) {
+@media screen and (max-height: 500px) {
   footer {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-image: url("../images/footer-bg.webp");
-    background-repeat: no-repeat;
-    z-index: 99;
-    .footer-container {
-      padding-left: 2.5rem;
-      padding-top: 10rem;
-      padding-right: 7rem;
-      padding-bottom: 10rem;
-      .footer-cont {
-        .footer-links {
-          nav {
-            .nav-list {
-              display: flex;
-              justify-content: end;
-              align-items: center;
-              list-style: none;
-              gap: 4rem;
-              .nav-item {
-                a {
-                  color: white;
-                  font-family: "DM Sans", sans-serif;
-                  font-size: 1.4rem;
-                  line-height: 2.7rem;
-                  text-decoration: none;
-                  font-weight: bold;
-                  transition: all 0.4s;
-                }
-                a:hover {
-                  color: white;
-                }
-              }
-            }
-          }
-        }
-        .footer-writing {
-          margin-top: 3.5rem;
-          .f-part {
-            font-family: "Tangerine", cursive;
-            font-weight: 400;
-            font-size: 3.4rem;
-            line-height: 3.6rem;
-            color: white;
-          }
-          .s-part {
-            font-family: "Tangerine", cursive;
-            font-weight: 400;
-            font-size: 3.4rem;
-            line-height: 3.6rem;
-            color: white;
-          }
-        }
-      }
-    }
-  }
-
-  .nav-item.active {
-    a {
-      color: #4d0013;
-    }
+    display: none;
   }
 }
 
 //PHOTO
 
-@media screen and (max-width: 992px) {
+@media screen and (max-height: 500px) {
   .foto-m {
-    margin-top: 8.6rem;
+    margin-top: 0rem;
     .foto-hero {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 15rem;
-      margin-bottom: 12rem;
+      margin-top: 0rem;
+      margin-bottom: 5rem;
       div {
-        height: 56rem;
+        height: 25rem;
         width: 142rem;
         background-repeat: no-repeat;
         background-position: center center;
@@ -1087,17 +1107,23 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 14rem 0rem;
+      margin: 7rem 0rem;
       h1 {
+        padding-left: 2rem;
+        padding-right: 2rem;
         text-align: center;
         font-family: "Tangerine", cursive;
         font-weight: 700;
-        font-size: 6rem;
+        font-size: 3.5rem;
         color: rgba(64, 0, 16, 0.8);
+        br {
+          display: none;
+        }
       }
     }
     .foto-gal-sec {
       margin-bottom: 20rem;
+      padding-bottom: 10rem;
       .foto-gal-container {
         padding: 0rem 10rem;
         .foto-gal {
@@ -1105,14 +1131,14 @@
           grid-template-columns: repeat(3, 1fr);
           justify-content: center;
           align-items: center;
-          gap: 1.6rem;
+          gap: 1rem;
           .foto-item {
             display: flex;
             justify-content: center;
             align-items: center;
             background: rgba(64, 0, 16, 0.8);
             border-radius: 10px;
-            padding: 7.5rem 5rem;
+            padding: 2rem 1rem;
             img,
             .coming {
               width: 50px;
@@ -1127,7 +1153,7 @@
               text-align: center;
               font-family: "Tangerine", cursive;
               font-weight: 400;
-              font-size: 6rem;
+              font-size: 3rem;
               color: #d4af37;
             }
           }
@@ -1138,13 +1164,13 @@
 }
 
 // HOME
-@media screen and (max-width: 992px) {
+@media screen and (max-height: 500px) {
   $red-heading: #64313e;
   $white-bg: #f9f7f5;
 
   .hero-sec {
     background-color: $white-bg;
-    padding-top: 14rem;
+    padding-top: 7rem;
     position: relative;
     .hero-bg {
       position: absolute;
@@ -1178,16 +1204,16 @@
         }
 
         .bot-img {
-          width: 30rem;
-          height: 9rem;
+          width: auto;
+          height: 6rem;
         }
       }
       .hero-names {
         h1 {
           font-family: "Tangerine", cursive;
           font-weight: 700;
-          font-size: 10rem;
-          line-height: 10rem;
+          font-size: 7.5rem;
+          line-height: 7rem;
           text-align: center;
           color: $red-heading;
           margin-top: 2.5rem;
@@ -1198,29 +1224,29 @@
         h2 {
           font-family: "Tangerine", cursive;
           font-weight: 400;
-          font-size: 7rem;
+          font-size: 6rem;
           line-height: 4.8rem;
           text-align: center;
           color: $red-heading;
-          margin-top: 5rem;
+          margin-top: 2.5rem;
         }
         h3 {
           font-family: "Tangerine", cursive;
           font-weight: 700;
-          font-size: 6rem;
+          font-size: 5rem;
           line-height: 4.8rem;
           text-align: center;
           color: $red-heading;
-          margin-top: 7.5rem;
+          margin-top: 4rem;
         }
         h4 {
           font-family: "Tangerine", cursive;
           font-weight: 400;
-          font-size: 6rem;
+          font-size: 5rem;
           line-height: 4.8rem;
           text-align: center;
           color: $red-heading;
-          margin-top: 7.5rem;
+          margin-top: 4rem;
         }
       }
     }
@@ -1230,10 +1256,11 @@
   .date-area {
     margin-top: 10rem;
     margin-bottom: 40rem;
-    z-index: 99;
+    z-index: 8;
   }
   .show-counter {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 3rem;
@@ -1244,14 +1271,14 @@
       flex-direction: column;
       border: 2px solid $red-heading;
       border-radius: 8px;
-      padding: 2.5rem 5rem;
+      padding: 1.5rem 2.5rem;
       background-color: $white-bg;
       p {
         font-size: 5rem;
         margin-bottom: 2.5rem;
       }
       span {
-        font-size: 4rem;
+        font-size: 3.5rem;
       }
     }
   }
@@ -1272,20 +1299,20 @@
           color: white;
           font-family: "Tangerine", cursive;
           font-weight: 700;
-          font-size: 6rem;
+          font-size: 4rem;
         }
         p {
           margin-top: 3.5rem;
           color: white;
           font-family: "Tangerine", cursive;
           font-weight: 700;
-          font-size: 3.8rem;
+          font-size: 3rem;
         }
         .hrsvp-btn-area {
           margin-top: 3.5rem;
           .hrsvp-btn {
             display: inline-block;
-            padding: 2.4rem 4rem;
+            padding: 1.5rem 3rem;
             font-weight: 900;
             font-family: "Merriweather", sans-serif;
             font-size: 1.6rem;
@@ -1335,9 +1362,10 @@
         .ben-grid {
           margin-top: 5rem;
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          gap: 3rem;
+          gap: 12rem;
           padding-left: 2rem;
           padding-right: 2rem;
           .ben-item {
@@ -1388,15 +1416,15 @@
           h2 {
             font-family: "Tangerine", cursive;
             font-weight: 400;
-            font-size: 5rem;
+            font-size: 4rem;
             text-align: center;
             color: #400010;
           }
           h1 {
-            margin-top: 3.5rem;
+            margin-top: 2.5rem;
             font-family: "Tangerine", cursive;
             font-weight: 700;
-            font-size: 5rem;
+            font-size: 4rem;
             text-align: center;
             color: #400010;
           }
@@ -1410,21 +1438,28 @@
   //couple sec start
 
   .homes .couple-sec {
+    display: none;
+  }
+
+  .couple-sec-mob {
+    display: block;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-image: url("../images/homebg.svg");
-    height: 150rem;
+    height: 100%;
     width: auto;
     .couple-cont {
       position: relative;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
       .couple-main-img {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         background-image: url("../images/Couple_01.webp");
         height: 45rem;
-        width: 90rem;
+        width: 100%;
         position: absolute;
         top: 0%;
         left: 50%;
@@ -1442,75 +1477,79 @@
         h1 {
           font-family: "Tangerine", cursive;
           font-weight: 700;
-          font-size: 6rem;
+          font-size: 4.5rem;
           text-align: center;
           color: white;
-          line-height: 7rem;
+          line-height: 4.5rem;
         }
         .main-couple {
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          gap: 5rem;
+          gap: 0rem;
+          padding-left: 2.5rem;
+          padding-right: 2.5rem;
+          height: 100%;
           .img-box {
+            margin-top: 8rem;
             img {
-              width: 37rem;
-              height: 50rem;
+              width: auto;
+              height: 45rem;
               border-radius: 1rem;
             }
           }
-          .wedding-cards {
-            .card-item {
-              background-color: white;
-              border-radius: 0.8rem;
-              position: relative;
-              .card-img {
-                position: absolute;
-                top: 0%;
-                left: 13%;
-                transform: translate(-50%, -50%);
-                img {
-                  width: 7.1rem;
-                  height: 7.2rem;
-                }
+          .card-item {
+            background-color: white;
+            border-radius: 0.8rem;
+            position: relative;
+            width: 100%;
+            .card-img {
+              position: absolute;
+              top: 0%;
+              left: 13%;
+              transform: translate(-50%, -50%);
+              img {
+                width: 9.1rem;
+                height: 9.2rem;
               }
-              .card-wrt {
-                padding: 5.5rem 2.4rem 2.4rem 2.4rem;
+            }
+            .card-wrt {
+              padding: 5.5rem 1.2rem 1.2rem 1.2rem;
+              width: 100%;
+              p {
+                font-family: "Tangerine", cursive;
+                font-weight: 400;
+                font-size: 3rem;
+                line-height: 3rem;
+                color: #400010;
+              }
+              .card-divider {
+                height: 1px;
                 width: 100%;
+                background-color: #e6e6e6;
+                margin-top: 2.4rem;
+                margin-bottom: 2.4rem;
+              }
+              .card-footer {
                 p {
                   font-family: "Tangerine", cursive;
-                  font-weight: 400;
-                  font-size: 2.8rem;
-                  line-height: 3rem;
+                  font-weight: 700;
+                  font-size: 2.4rem;
                   color: #400010;
+                  margin-bottom: 0.8rem;
                 }
-                .card-divider {
-                  height: 1px;
-                  width: 100%;
-                  background-color: #e6e6e6;
-                  margin-top: 2.4rem;
-                  margin-bottom: 2.4rem;
-                }
-                .card-footer {
-                  p {
-                    font-family: "Tangerine", cursive;
-                    font-weight: 700;
-                    font-size: 2.8rem;
-                    color: #400010;
-                    margin-bottom: 0.8rem;
-                  }
-                  span {
-                    font-family: "Tangerine", cursive;
-                    font-weight: 400;
-                    font-size: 2.8rem;
-                    color: #400010;
-                  }
+                span {
+                  font-family: "Tangerine", cursive;
+                  font-weight: 400;
+                  font-size: 2.4rem;
+                  color: #400010;
                 }
               }
             }
-            .card-item.v2 {
-              margin-top: 8rem;
-            }
+          }
+          .card-item.v2 {
+            margin-top: 8rem;
           }
         }
       }
@@ -1523,7 +1562,7 @@
     background-position: center center;
     background-size: cover;
 
-    height: 20.6rem;
+    height: 10rem;
     width: auto;
   }
 
@@ -1585,7 +1624,7 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-height: 500px) {
   $white-bg: #f9f7f5;
   $red-bg: #64313e;
   $red-text: rgba(64, 0, 16, 0.8);
@@ -1594,7 +1633,7 @@
 
   .bread-crumb {
     position: relative;
-    top: 7rem;
+    top: -4rem;
     background-color: transparent;
     width: 100%;
     height: 100%;
@@ -1607,6 +1646,7 @@
     .links {
       grid-column: 2 / 18;
       grid-row: 1;
+      display: none;
       .bread-crumb-list {
         font-family: "Merriweather";
         display: flex;
@@ -1634,12 +1674,133 @@
         }
       }
     }
-    .page-title {
-      margin-top: 3.5rem;
+    .page-title h1 {
       grid-column: 2/18;
       grid-row: 2;
       color: $claret-red;
-      font-size: 6rem;
+      font-size: 4rem;
+      font-weight: 400;
+    }
+  }
+}
+
+// NAVBAR
+@media screen and (max-height: 500px) {
+  .h-n {
+    display: none;
+  }
+  .navbar-mob {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+    z-index: -1;
+    .nav-mob-con {
+      padding-top: 5.6rem;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../images/footer-bg.webp");
+      color: #d4af37;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .nav-mob-black {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        .nav-mob-l {
+          .mob-nav-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            gap: 2.5rem;
+            .nav-item {
+              a {
+                font-family: "DM Sans", sans-serif;
+                font-weight: 400;
+                font-size: 2rem;
+                text-align: center;
+                color: #d4af37;
+                transition: all 0.3s;
+                &:hover {
+                  transform: scale(1.2, 1);
+                }
+              }
+            }
+            .nav-item.active {
+              a {
+                font-family: "DM Sans", sans-serif;
+                font-weight: 700;
+                font-size: 2rem;
+                text-align: center;
+                color: #d4af37;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav-mob {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 20;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    .nav-mob-ham {
+      color: #4d0013;
+      background-color: #d4af37;
+      padding: 0.7rem 1.4rem;
+      border-radius: 50%;
+      .container {
+        display: inline-block;
+        cursor: pointer;
+      }
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 20px;
+        height: 4px;
+        background-color: #4d0013;
+        margin: 6px 0;
+        transition: 0.4s;
+        border-radius: 100px;
+      }
+
+      .change .bar1 {
+        transform: translate(0, 10px) rotate(-45deg);
+        background-color: #4d0013;
+      }
+
+      .change .bar2 {
+        opacity: 0;
+        background-color: #4d0013;
+      }
+
+      .change .bar3 {
+        transform: translate(0, -10px) rotate(45deg);
+        background-color: #4d0013;
+      }
+      img {
+        width: 3rem;
+        height: 2.1rem;
+        cursor: pointer;
+      }
+
+      img:hover {
+        opacity: 0.6;
+      }
     }
   }
 }
