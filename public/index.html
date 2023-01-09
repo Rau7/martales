@@ -1837,7 +1837,9 @@
           ui = document.getElementById("ui");
 
         setInterval(function () {
-          ui.classList.toggle("switch");
+          if (ui.classList) {
+            ui.classList.toggle("switch");
+          }
         }, timer);
       });
     </script>

@@ -81,6 +81,55 @@ function Story() {
             </div>
           </div>
         </section>
+        <section className="couple-sec-mob">
+          <div className="couple-cont">
+            <div className="couple-area">
+              <h1>
+                “E’ impossibile creare o imitare <br /> l’Amore”
+              </h1>
+              <div className="main-couple">
+                <div className="card-item">
+                  <div className="card-img">
+                    <img src={pot} alt="marts" />
+                  </div>
+                  <div className="card-wrt">
+                    <p>
+                      Non voglio che mia figlia segua le mie orme. <br /> Voglio
+                      che prenda il sentiero accanto a me e <br /> vada oltre
+                      ciò che avrei mai potuto immaginare.
+                      <br />
+                    </p>
+                    <div className="card-divider"></div>
+                    <div className="card-footer">
+                      <p>Marcella</p>
+                      <span>Madre della Sposa</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="img-box">
+                  <img src={couple_05} alt="marta-and-alessandro" />
+                </div>
+                <div className="card-item v2">
+                  <div className="card-img">
+                    <img src={pot} alt="marts" />
+                  </div>
+                  <div className="card-wrt">
+                    <p>
+                      La famiglia è il posto dove l'amore non <br /> finisce
+                      mai, al massimo si moltiplica.
+                      <br />
+                    </p>
+                    <div className="card-divider"></div>
+                    <div className="card-footer">
+                      <p>Maria</p>
+                      <span>Madre dello Sposo</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="cpl-tline-sec">
           <div className="cpl-header">
             <h1>Come ci siamo conosciuti</h1>

@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../styles/map.css";
-import "../styles/home.scss";
 import top1 from "../images/Ornament_01.webp";
 import bot1 from "../images/Ornament_02.webp";
 import Navbar from "../components/Navbar";
@@ -821,7 +819,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="copule-sec-mob">
+        <section className="couple-sec-mob">
           <div className="couple-cont">
             <div className="couple-main-img"></div>
             <div className="couple-area">
