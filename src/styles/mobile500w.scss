@@ -302,7 +302,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 15rem;
+      margin-top: -3rem;
       margin-bottom: 12rem;
       div {
         height: 30rem;
@@ -589,7 +589,7 @@
             align-items: center;
             position: relative;
             img {
-              width: auto;
+              width: 100%;
               height: 20rem;
               z-index: 1;
             }
@@ -627,7 +627,7 @@
             justify-content: center;
             align-items: center;
             img {
-              width: 796px;
+              width: 100%;
               height: 496px;
               z-index: 1;
             }
@@ -901,20 +901,20 @@
             margin-bottom: 5rem;
             gap: 10rem;
             .broom {
-              width: 40.8rem;
-              height: 24.8rem;
+              height: 100%;
+              width: 30rem;
               transform: rotate(212deg);
               rotate: 180deg;
               margin-right: 2.7rem;
             }
             .bus {
-              width: 35.9rem;
-              height: 40.6rem;
+              height: 100%;
+              width: 30rem;
               margin-right: 5rem;
             }
             .owl {
-              width: 31.4rem;
-              height: 33.5rem;
+              height: 100%;
+              width: 30rem;
               margin-left: 6.7rem;
             }
             .tp-item-wrt {
@@ -935,7 +935,7 @@
                 text-align: center;
                 font-style: normal;
                 font-weight: 400;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 line-height: 2.7rem;
                 color: rgba(64, 0, 16, 0.8);
               }
@@ -1066,13 +1066,13 @@
 
 @media screen and (max-width: 500px) {
   .foto-m {
-    margin-top: 8.6rem;
+    margin-top: 0rem;
     .foto-hero {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 15rem;
-      margin-bottom: 12rem;
+      margin-top: 0rem;
+      margin-bottom: 5rem;
       div {
         height: 25rem;
         width: 142rem;
@@ -1088,14 +1088,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 14rem 0rem;
+      margin: 7rem 0rem;
       h1 {
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;
         font-family: "Tangerine", cursive;
         font-weight: 700;
-        font-size: 5rem;
+        font-size: 3.5rem;
         color: rgba(64, 0, 16, 0.8);
         br {
           display: none;
@@ -1112,14 +1112,14 @@
           grid-template-columns: repeat(3, 1fr);
           justify-content: center;
           align-items: center;
-          gap: 1.6rem;
+          gap: 1rem;
           .foto-item {
             display: flex;
             justify-content: center;
             align-items: center;
             background: rgba(64, 0, 16, 0.8);
             border-radius: 10px;
-            padding: 7.5rem 5rem;
+            padding: 2rem 1rem;
             img,
             .coming {
               width: 50px;
@@ -1134,7 +1134,7 @@
               text-align: center;
               font-family: "Tangerine", cursive;
               font-weight: 400;
-              font-size: 6rem;
+              font-size: 3rem;
               color: #d4af37;
             }
           }
@@ -1439,8 +1439,8 @@
         background-position: center center;
         background-size: cover;
         background-image: url("../images/Couple_01.webp");
-        height: 59rem;
-        width: 110rem;
+        height: 45rem;
+        width: 100%;
         position: absolute;
         top: 0%;
         left: 50%;
