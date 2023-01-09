@@ -368,7 +368,9 @@
             margin-bottom: 6rem;
           }
           .loc-list {
-            width: 92rem;
+            width: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
             .loc-item {
               display: flex;
               justify-content: center;
