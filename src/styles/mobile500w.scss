@@ -1719,12 +1719,12 @@
             align-items: center;
             list-style: none;
             padding: 0;
-            gap: 10rem;
+            gap: 2.5rem;
             .nav-item {
               a {
                 font-family: "DM Sans", sans-serif;
                 font-weight: 400;
-                font-size: 3.75rem;
+                font-size: 2rem;
                 text-align: center;
                 color: #d4af37;
                 transition: all 0.3s;
@@ -1736,8 +1736,8 @@
             .nav-item.active {
               a {
                 font-family: "DM Sans", sans-serif;
-                font-weight: 400;
-                font-size: 4rem;
+                font-weight: 700;
+                font-size: 2rem;
                 text-align: center;
                 color: #d4af37;
               }
@@ -1758,7 +1758,7 @@
     .nav-mob-ham {
       color: #4d0013;
       background-color: #d4af37;
-      padding: 1rem 1.5rem;
+      padding: 0.7rem 1.4rem;
       border-radius: 50%;
       .container {
         display: inline-block;
@@ -1767,7 +1767,7 @@
       .bar1,
       .bar2,
       .bar3 {
-        width: 30px;
+        width: 20px;
         height: 4px;
         background-color: #4d0013;
         margin: 6px 0;
