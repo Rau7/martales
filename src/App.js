@@ -5,7 +5,9 @@ import Story from "./pages/Story";
 import Foto from "./pages/Foto";
 import Wedding from "./pages/Wedding";
 import "./styles/general.scss";
-
+import "./styles/mobile1200w.scss";
+import "./styles/mobile992w.scss";
+import "./styles/mobile768w.scss";
 function App() {
   return (
     <Routes>

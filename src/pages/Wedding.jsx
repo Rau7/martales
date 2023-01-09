@@ -24,7 +24,7 @@ function Wedding() {
   }, []);
   return (
     <>
-      <div className="ball-load">
+      {/* <div className="ball-load">
         <div>
           <input type="checkbox" name="checkbox" id="animate" defaultChecked />
           <label htmlFor="animate">
@@ -62,7 +62,7 @@ function Wedding() {
             </div>
           </label>
         </div>
-      </div>
+  </div> */}
       <Navbar />
       <BreadCrumb name={"Il Matrimonio"} link={"/il_matrimonio"} />
       <main className="wedding-m">
@@ -130,9 +130,10 @@ function Wedding() {
                       <h1>10:30</h1>
                     </div>
                   </div>
+                  <div className="empty-div"></div>
                 </div>
                 <div className="tline-item right">
-                  <div className="blank"></div>
+                  <div className="empty-div"></div>
                   <div className="tline-ind">
                     <div className="he">
                       <h1>11:30</h1>
@@ -162,6 +163,7 @@ function Wedding() {
                       <h1>13:00</h1>
                     </div>
                   </div>
+                  <div className="empty-div"></div>
                 </div>
               </div>
             </div>

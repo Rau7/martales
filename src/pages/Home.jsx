@@ -821,6 +821,59 @@ function Home() {
             </div>
           </div>
         </section>
+        <section className="copule-sec-mob">
+          <div className="couple-cont">
+            <div className="couple-main-img"></div>
+            <div className="couple-area">
+              <h1>
+                “Non possiamo scegliere il nostro <br /> destino, ma possiamo
+                scegliere <br />
+                le persone”
+              </h1>
+              <div className="main-couple">
+                <div className="card-item">
+                  <div className="card-img">
+                    <img src={pot} alt="marts" />
+                  </div>
+                  <div className="card-wrt">
+                    <p>
+                      L'amore è quando la felicità di un'altra <br /> persona è
+                      più importante della tua. <br />
+                      <br /> (H. Jackson Brown)
+                    </p>
+                    <div className="card-divider"></div>
+                    <div className="card-footer">
+                      <p>Alessandro Baiano</p>
+                      <span>Sposo</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="img-box">
+                  <img src={couple_02} alt="marta-and-alessandro" />
+                </div>
+                <div className="card-item v2">
+                  <div className="card-img">
+                    <img src={pot} alt="marts" />
+                  </div>
+                  <div className="card-wrt">
+                    <p>
+                      È in questo che consiste il vero amore: lasciare che{" "}
+                      <br /> una persona sia ciò che davvero è. La maggior{" "}
+                      <br /> parte delle persone ti ama per quello che
+                      pretendono tu sia. <br />
+                      <br /> (Jim Morrison)
+                    </p>
+                    <div className="card-divider"></div>
+                    <div className="card-footer">
+                      <p>Marta Bizzarro</p>
+                      <span>Sposa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="seperator-sec"></section>
         <section className="ben-sec">
           <div className="ben-container">

@@ -1,0 +1,1645 @@
+//STORY AREA
+@media screen and (max-width: 992px) {
+  .story-m {
+    margin-top: 8.6rem;
+    .story-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15rem;
+      margin-bottom: 12rem;
+      div {
+        height: 56rem;
+        width: 120rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("../images/Couple_04.webp");
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+      }
+    }
+    .cpl-tline-sec {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .cpl-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+          font-family: "Tangerine", cursive;
+          font-weight: 400;
+          font-size: 9rem;
+          text-align: center;
+          color: #400010;
+          letter-spacing: 5%;
+        }
+        img {
+          height: 7rem;
+          width: auto;
+        }
+      }
+      .cpl-tline-container {
+        width: 100%;
+        margin-top: 10rem;
+        margin-bottom: 12rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        .cpl-tline {
+          .tline {
+            .tline-item {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+
+              gap: 0rem;
+              .img-area {
+                .img-bg {
+                  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                  border-radius: 1rem;
+                  height: 21rem;
+                  width: 40rem;
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  background-size: cover;
+                  &.c1 {
+                    background-image: url("../images/Couple_06.webp");
+                  }
+                  &.c2 {
+                    background-image: url("../images/Couple_07.webp");
+                  }
+                  &.c3 {
+                    background-image: url("../images/Riccardo.webp");
+                  }
+                  &.c4 {
+                    background-image: url("../images/Family_01.webp");
+                  }
+                  &.c5 {
+                    background-image: url("../images/Couple_08.webp");
+                  }
+                }
+                h1 {
+                  font-family: "Tangerine", cursive;
+                  font-weight: 700;
+                  font-size: 4.8rem;
+                  color: #400010;
+                  margin-top: 2.5rem;
+                }
+                .fp {
+                  margin-top: 0.7rem;
+                  font-family: "Tangerine", cursive;
+                  font-weight: 400;
+                  font-size: 3.2rem;
+                  line-height: 3rem;
+                  color: #400010;
+                }
+                .sp {
+                  margin-top: 2.5rem;
+                  font-family: "Tangerine", cursive;
+                  font-weight: 400;
+                  font-size: 3.2rem;
+                  line-height: 3rem;
+                  color: #400010;
+                }
+                .tp {
+                  margin-top: 2.5rem;
+                  font-family: "Tangerine", cursive;
+                  font-weight: 400;
+                  font-size: 3.2rem;
+                  line-height: 3rem;
+                  color: #400010;
+                }
+              }
+              .empty-div {
+                width: 40rem;
+                height: 100%;
+              }
+              .tline-ind {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5rem;
+
+                .he {
+                  position: relative;
+                  .big-line {
+                    position: absolute;
+                    top: 120rem;
+                    left: 50%;
+                    border-left: 1px dashed #400010;
+                    width: 0;
+                    height: 250rem;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                  }
+                  h1 {
+                    font-weight: 900;
+                    font-family: "Merriweather", sans-serif;
+                    font-size: 3.2rem;
+                    text-align: center;
+                    z-index: 2;
+                    width: 19.2rem;
+                    padding: 1.7rem 5rem;
+                    border-radius: 8px;
+                    background-color: rgba(64, 0, 16, 0.8);
+                    color: white;
+                  }
+                }
+              }
+            }
+            .tline-item.right {
+              justify-content: end;
+              align-items: flex-start;
+            }
+            .tline-item.left {
+              justify-content: start;
+              align-items: flex-start;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .couple-sec {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../images/homebg.svg");
+    height: 110rem;
+    width: auto;
+    .couple-cont {
+      position: relative;
+      .couple-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        h1 {
+          font-family: "Tangerine", cursive;
+          font-weight: 700;
+          font-size: 7.5rem;
+          text-align: center;
+          color: white;
+          line-height: 7rem;
+        }
+        .main-couple {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10rem;
+          .img-box {
+            img {
+              width: 36rem;
+              height: 65rem;
+              border-radius: 1rem;
+            }
+          }
+          .wedding-cards {
+            .card-item {
+              background-color: white;
+              border-radius: 0.8rem;
+              position: relative;
+              .card-img {
+                position: absolute;
+                top: 0%;
+                left: 13%;
+                transform: translate(-50%, -50%);
+                img {
+                  width: 9.1rem;
+                  height: 9.2rem;
+                }
+              }
+              .card-wrt {
+                padding: 5.5rem 2.4rem 2.4rem 2.4rem;
+                width: 100%;
+                p {
+                  font-family: "Tangerine", cursive;
+                  font-weight: 400;
+                  font-size: 3.5rem;
+                  line-height: 3rem;
+                  color: #400010;
+                }
+                .card-divider {
+                  height: 1px;
+                  width: 100%;
+                  background-color: #e6e6e6;
+                  margin-top: 2.4rem;
+                  margin-bottom: 2.4rem;
+                }
+                .card-footer {
+                  p {
+                    font-family: "Tangerine", cursive;
+                    font-weight: 700;
+                    font-size: 2.8rem;
+                    color: #400010;
+                    margin-bottom: 0.8rem;
+                  }
+                  span {
+                    font-family: "Tangerine", cursive;
+                    font-weight: 400;
+                    font-size: 2.8rem;
+                    color: #400010;
+                  }
+                }
+              }
+            }
+            .card-item.v2 {
+              margin-top: 8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//INVITE
+@media screen and (max-width: 992px) {
+  @import url("https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap");
+  .wedding-m {
+    margin-top: 8.6rem;
+    .wedding-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15rem;
+      margin-bottom: 12rem;
+      div {
+        height: 56rem;
+        width: 142rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("../images/Reception.webp");
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+      }
+    }
+    .wedding-wrt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 14rem 0rem;
+      h1 {
+        text-align: center;
+        font-family: "Tangerine", cursive;
+        font-weight: 700;
+        font-size: 8rem;
+        color: rgba(64, 0, 16, 0.8);
+      }
+    }
+    .wedding-location {
+      .wedding-location-container {
+        .w-loc {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .w-loc-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+              text-align: center;
+              font-family: "Tangerine", cursive;
+              font-weight: 700;
+              font-size: 8rem;
+              color: rgba(64, 0, 16, 0.8);
+            }
+            img {
+              width: 350px;
+              height: 70.94px;
+            }
+          }
+          p {
+            text-align: center;
+            font-family: "Tangerine", cursive;
+            font-weight: 400;
+            font-size: 4rem;
+            color: rgba(64, 0, 16, 0.8);
+            margin-top: 4rem;
+            margin-bottom: 6rem;
+          }
+          .loc-list {
+            width: 92rem;
+            .loc-item {
+              display: flex;
+              justify-content: center;
+              gap: 6rem;
+              p {
+                text-align: center;
+                font-family: "Tangerine", cursive;
+                font-weight: 400;
+                font-size: 4rem;
+                color: rgba(64, 0, 16, 0.8);
+              }
+
+              .loc-img-1 {
+                width: 427.27px;
+                height: 293.26px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                background-image: url("../images/Location_01.webp");
+              }
+            }
+            .loc-item-rev {
+              display: flex;
+              justify-content: center;
+              gap: 6rem;
+              margin-top: 8rem;
+              p {
+                text-align: center;
+                font-family: "Tangerine", cursive;
+                font-weight: 400;
+                font-size: 4rem;
+                color: rgba(64, 0, 16, 0.8);
+              }
+
+              .loc-img-2 {
+                width: 317.13px;
+                height: 323.14px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                background-image: url("../images/Chappel_01.webp");
+              }
+            }
+          }
+        }
+      }
+    }
+    .divider {
+      width: 100%;
+      height: 263.61px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../images/o3.svg");
+      margin-bottom: 5rem;
+    }
+    .wed-tline-sec {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .wed-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+          font-family: "Tangerine", cursive;
+          font-weight: 400;
+          font-size: 8rem;
+          text-align: center;
+          color: #400010;
+          letter-spacing: 5%;
+        }
+        img {
+          height: 7rem;
+          width: auto;
+        }
+      }
+      .wed-tline-container {
+        width: 100%;
+        margin-top: 10rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        .wed-tline {
+          .empty-div {
+            width: 40rem;
+            height: 100%;
+          }
+          .tline {
+            .tline-item {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+
+              gap: 0rem;
+              .img-area {
+                .img-bg {
+                  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                  border-radius: 1rem;
+                  height: 21rem;
+                  width: 40rem;
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  background-size: cover;
+                  &.c1 {
+                    background-image: url("../images/Ceremony_01.webp");
+                  }
+                  &.c2 {
+                    background-image: url("../images/Aperitivo_01.webp");
+                  }
+                  &.c3 {
+                    background-image: url("../images/Reception_01.webp");
+                  }
+                }
+                h1 {
+                  font-family: "Tangerine", cursive;
+                  font-weight: 700;
+                  font-size: 4.8rem;
+                  color: #400010;
+                  margin-top: 2.5rem;
+                }
+                .fp {
+                  margin-top: 0.7rem;
+                  font-family: "Tangerine", cursive;
+                  font-weight: 400;
+                  font-size: 3.2rem;
+                  line-height: 3rem;
+                  color: #400010;
+                }
+                .sp {
+                  margin-top: 2.5rem;
+                  font-family: "Tangerine", cursive;
+                  font-weight: 400;
+                  font-size: 3.2rem;
+                  line-height: 3rem;
+                  color: #400010;
+                }
+                .tp {
+                  margin-top: 2.5rem;
+                  font-family: "Tangerine", cursive;
+                  font-weight: 400;
+                  font-size: 3.2rem;
+                  line-height: 3rem;
+                  color: #400010;
+                }
+              }
+              .tline-ind {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5rem;
+
+                .he {
+                  position: relative;
+                  .big-line {
+                    position: absolute;
+                    top: 60rem;
+                    left: 50%;
+                    border-left: 1px dashed #400010;
+                    width: 0;
+                    height: 120rem;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                  }
+                  h1 {
+                    font-weight: 900;
+                    font-family: "Merriweather", sans-serif;
+                    font-size: 3.2rem;
+                    text-align: center;
+                    z-index: 2;
+                    width: 19.2rem;
+                    padding: 1.7rem 5rem;
+                    border-radius: 8px;
+                    background-color: rgba(64, 0, 16, 0.8);
+                    color: white;
+                  }
+                }
+              }
+            }
+            .tline-item.right {
+              justify-content: end;
+              align-items: flex-start;
+            }
+            .tline-item.left {
+              justify-content: start;
+              align-items: flex-start;
+            }
+          }
+        }
+      }
+    }
+
+    .seperator {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAADOCAYAAADIZqVFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAB7eSURBVHgB7d1tUxRp2ibgu0WxsVEQGkUdDSeeiZ0fsPt9n6/7I/br/uiO3md6+k0UKSgsKUFhnrzSupm0LLDeyaw6joiKegGdiGnMSs668ry++8+0+a8EAADMxZ3V1bS+uZE2H++Uj7P3R+30rrgdH7QSAAAsiu8E0AAAcDPW7q+nje2tMpC+tbJSvvbx7Cx133XSwau99PH0LAEAQJMJoAEA4IZF+Hy/CKEfFGF0hNJZBNHtg1bqtNvp4tN5AgCAphFAAwBAjUQtx/bT3TKIzhUdF+fnqXPUTu23rdTtdBIAADSFABoAAGoq13P8UNyyqOg4+HOvDKJVdAAAUHcCaAAAqLmYhH7w41ZZ0VFdXBgLC01FAwBQZwJoAABokLy4MMLozFQ0AAB1JYAGAIAGiknoe0UYvfV096up6MPX++m0200AAHDTBNAAANBw0RMdU9HVrujTk246fLNfBtIAAHBTBNAAALAgYhJ6++luWdORp6KjnqP7rpMOXu2p5wAAYO4E0AAAsIByT3SE0VkE0e2DlqloAADmRgANAAALLE9FR03HrZWV8jVLCwEAmBcBNAAALIEIn+8XIfSgpYXqOQAAmBUBNAAALJmo5cgVHZl6DgAAZkEADQAAS+qqpYXqOQAAmBYBNAAAUE5Eq+cAAGDaBNAAAMClmIbeerSTftjcuHwt6jne9qaiAQBgFAJoAADgK7meo9oTnes59EQDADAsATQAAHClCKLvxVR0pZ4jgujjt6103Gqp5wAA4FoCaAAAYCh6ogEAGJUAGgAAGMmgnugIottvW3qiAQD4ggAaAAAYy6Ce6FhY2C7CaD3RAAAEATQAADCRHETHZHS1J9rCQgAABNAAAMBUXLWwMILoTrudLj6dJwAAlosAGgAAmLr+hYURRB+/baXjVsvCQgCAJSKABgAAZqY/iA5Ry3Hwak8QDQCwBATQAADAzEU/9I9PPvdEZ4JoAIDFJ4AGAADmJgLomIp+UNwyQTQAwOISQAMAAHMXlRzbT3cF0QAAC04ADQAA3BhBNADAYhNAAwAAN04QDQCwmATQAABAbQiiAQAWiwAaAACoHUE0AMBiEEADAAC1JYgGAGg2ATQAAFB7gmgAgGYSQAMAAI0hiAYAaBYBNAAA0DiCaACAZhBAAwAAjSWIBgCoNwE0AADQeBFE7758kdbur5fPP56dpeO3rXTcagmiAQBukAAaAABYGBFARxAdgXSIIPrgz71yKhoAgPkTQAMAAAtnY3srbT3dFUQDANwwATQAALCwBNEAADdLAA0AACy8vKgwB9Hdd520989f9UMDAMyYABoAAFgKET7nIDqLSeiDV3uCaACAGRFAAwAAS2VQEF3WcrRagmgAgCkTQAMAAEspgujdly/S2v318rl+aACA6RNAAwAAS82iQgCA2RFAAwAApK+D6PdH7fTm9z/UcgAATOC7/7P+lzKAvrWyklaK27Du3F1Ns3Bxfp7OP50P9b3nxffG91/7dw34+sVF8eeG/N8AAACWR4TPm4930sNHO5evWVQIADC+7/7f//xPE9BpcPD96ezs6++pBNplAF75M9UT0v5w/GPl7+r/ewEAgHrpX1QY5/NHr/fT4Zv9BADA8L77v//jf5UB9FXTwoP0B6/TdOv28JPY8X23rvneW1d8feX29X9unqrBdzWYzoF19f/r6vfmr1f/uwm2AQBgutY3N9LO82f6oQEAxjR2B3T8oe9691/8hQNeG+Zrg753nsqw+vaXoXQ+ycz6A+/+59Vakv6v3a78XbOqL8lyUH1RmcLOgXWe0s7fc973PepJAADga/390Go5AACG893/toRwKNXw/Fsh+yiqwXc18M6Pq0F2dTo8f7065T3tYDtOpvtD7DyR3R9g50lsU9gAACyq/lqOENPQUctxcW6IAwBgEAF0zQwKuvtf+5YcalfD6xxYXwbXva9XvyemtKdVT3JdeB1fE1wDANBUcU799G9/TXfX1srnajkAAK4mgF4C/RPbw05p3767+lWInZ/3B9j5NukUdoTTOYwWWgMAUGf9tRzvj9rpze9/qOUAAKi4MoCedwfzKL6VmF81MfyvK743peHqNZbZVX3fV6mG1/n+cgq78rVJg+sIo6vT1ueV52eV1z9+PNNtDQDA1MW57MPHO2n7ye7la2o5AAD+bewlhFxvlGWLy/If4FtVInmyuloXslIJqFf6AutxqkKqYXVMWOfn0WddLmEUVgMAMIY4d915/iytb26Uz9VyAAB8JoBusEETyYv4H7Pahd2vGkav9Kas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);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 20.6rem;
+      width: auto;
+      margin-bottom: 10rem;
+    }
+
+    .nozze {
+      .nozze-container {
+        .nozze-main {
+          .nozze-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            img {
+              width: 829px;
+              height: 301px;
+              z-index: 1;
+            }
+            h1 {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-family: "Tangerine", cursive;
+              font-weight: 700;
+              font-size: 8rem;
+              color: #400010;
+              z-index: 2;
+            }
+          }
+          .cont-1 {
+            margin-top: 2rem;
+            margin-bottom: 8rem;
+            p {
+              text-align: center;
+              font-family: "Tangerine", cursive;
+              font-weight: 700;
+              font-size: 4rem;
+              color: #400010;
+            }
+          }
+          .iban-area {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 796px;
+              height: 496px;
+              z-index: 1;
+            }
+            h1 {
+              font-family: "Walter Turncoat", cursive;
+              text-transform: uppercase;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+              color: white;
+              font-size: 1.8rem;
+              font-weight: 400;
+              line-height: 6rem;
+              z-index: 2;
+            }
+          }
+          .cont-2 {
+            margin-top: 2rem;
+            margin-bottom: 8rem;
+            p {
+              text-align: center;
+              font-family: "Tangerine", cursive;
+              font-weight: 700;
+              font-size: 4rem;
+              color: #400010;
+              line-height: 6rem;
+            }
+          }
+        }
+      }
+    }
+
+    .w-rsvp-sec {
+      background: rgba(64, 0, 16, 0.8);
+      .w-rsvp-container {
+        padding-left: 2.5rem;
+        padding-top: 10rem;
+        padding-right: 2.5rem;
+        padding-bottom: 10rem;
+        .wrsvp {
+          h1 {
+            color: white;
+            font-family: "Tangerine", cursive;
+            font-weight: 700;
+            font-size: 6rem;
+          }
+          p {
+            margin-top: 3.5rem;
+            color: white;
+            font-family: "Tangerine", cursive;
+            font-weight: 700;
+            font-size: 3.8rem;
+          }
+          .wrsvp-btn-area {
+            margin-top: 3.5rem;
+            .wrsvp-btn {
+              display: inline-block;
+              padding: 2.4rem 4rem;
+              font-weight: 900;
+              font-family: "Merriweather", sans-serif;
+              font-size: 1.6rem;
+              background-color: #400010;
+              text-decoration: none;
+              text-transform: uppercase;
+              color: white;
+              border: 1px solid #d4af37;
+              border-radius: 8px;
+              transition: all 0.3s;
+            }
+            .wrsvp-btn:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//RSVP
+@media screen and (max-width: 992px) {
+  .rsvp-m {
+    .rsvp-mes-sec {
+      margin-top: 13rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 9.5rem;
+      border-radius: 10px;
+      .rsvp-mes-container {
+        .mes-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          .mes-form {
+            padding: 9.5rem 10.4rem;
+            background: rgba(64, 0, 16, 0.75);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+          .mes-info {
+            padding: 9.5rem 10.4rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-image: url("../images/footer-bg.webp");
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            .mes-header {
+              p {
+                font-family: "Tangerine", cursive;
+                font-weight: 400;
+                font-size: 4.8rem;
+                line-height: 4rem;
+                color: white;
+                text-align: center;
+                margin-bottom: 3rem;
+              }
+              h2 {
+                font-family: "Tangerine", cursive;
+                font-weight: 700;
+                font-size: 6rem;
+                line-height: 6rem;
+                color: white;
+                text-align: center;
+                margin-bottom: 3rem;
+              }
+              .mes-sep {
+                width: 100%;
+                border: 1px solid white;
+                margin-bottom: 4rem;
+              }
+              h3 {
+                font-family: "Tangerine", cursive;
+                font-weight: 700;
+                font-size: 5.2rem;
+                line-height: 3.2rem;
+                color: white;
+                text-align: center;
+                margin-bottom: 8rem;
+              }
+            }
+            .mes-mid {
+              h2 {
+                font-family: "Tangerine", cursive;
+                font-weight: 700;
+                font-size: 4.8rem;
+                line-height: 3.2rem;
+                color: white;
+                text-align: center;
+                margin-bottom: 2.4rem;
+              }
+              p {
+                font-family: "DM Sans", cursive;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2.7rem;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 13rem;
+              }
+            }
+            .mes-footer {
+              p {
+                font-family: "Tangerine", cursive;
+                font-weight: 700;
+                font-size: 3.2rem;
+                line-height: 3.2rem;
+                color: white;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .tp-sec {
+      .tp-cont {
+        .tp-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          h1 {
+            font-family: "Tangerine", cursive;
+            font-weight: 400;
+            font-size: 7.5rem;
+            text-align: center;
+            color: #400010;
+            letter-spacing: 3px;
+          }
+          img {
+            height: 7rem;
+            width: auto;
+          }
+        }
+        .tp-list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 5rem;
+          .tp-item-img-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            .broom {
+              width: 40.8rem;
+              height: 24.8rem;
+              transform: rotate(31.99deg);
+              margin-right: 2.7rem;
+            }
+            .bus {
+              width: 26.9rem;
+              height: 32.6rem;
+              margin-right: 5rem;
+              filter: drop-shadow(-19px 1px 7px rgba(30, 52, 92, 1));
+            }
+            .owl {
+              width: 31.4rem;
+              height: 33.5rem;
+              margin-left: 6.7rem;
+              filter: drop-shadow(-19px 1px 7px rgba(112, 85, 55, 1));
+            }
+            .tp-item-wrt {
+              h1 {
+                font-family: "Tangerine";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 4.2rem;
+                line-height: 3.2rem;
+                color: #400010;
+                text-decoration-line: underline;
+              }
+              p {
+                margin-top: 2.5rem;
+                font-family: "Walter Turncoat", cursive;
+                text-transform: uppercase;
+                text-align: left;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 2.7rem;
+                color: rgba(64, 0, 16, 0.8);
+              }
+            }
+          }
+          .tp-item-img-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            gap: 10rem;
+            .broom {
+              width: 40.8rem;
+              height: 24.8rem;
+              transform: rotate(212deg);
+              rotate: 180deg;
+              margin-right: 2.7rem;
+            }
+            .bus {
+              width: 35.9rem;
+              height: 40.6rem;
+              margin-right: 5rem;
+            }
+            .owl {
+              width: 31.4rem;
+              height: 33.5rem;
+              margin-left: 6.7rem;
+            }
+            .tp-item-wrt {
+              h1 {
+                font-family: "Tangerine";
+                font-style: normal;
+                text-align: right;
+                font-weight: 700;
+                font-size: 4.2rem;
+                line-height: 3.2rem;
+                color: #400010;
+                text-decoration-line: underline;
+              }
+              p {
+                margin-top: 2.5rem;
+                font-family: "Walter Turncoat", cursive;
+                text-transform: uppercase;
+                text-align: right;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 2.7rem;
+                color: rgba(64, 0, 16, 0.8);
+              }
+            }
+          }
+        }
+      }
+    }
+    .add-sec {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      .add-container {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("../images/Map.png");
+        height: 55rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        .add-info {
+          background-color: white;
+          margin: 0rem 1.9rem 1.6rem 1.6rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 3.2rem;
+          padding-right: 1rem;
+          padding-top: 2.85rem;
+          padding-bottom: 2.85rem;
+          .add-wrt {
+            h2 {
+              color: #400010;
+              font-weight: 900;
+              font-family: "Merriweather", sans-serif;
+              font-size: 2.4rem;
+            }
+            p {
+              margin-top: 0.7rem;
+              color: #400010;
+              font-weight: 400;
+              font-family: "DM Sans", cursive;
+              font-size: 1.6rem;
+            }
+          }
+          .add-btn {
+            .a-btn {
+              display: inline-block;
+              padding: 2.4rem 4rem;
+              font-weight: 900;
+              font-family: "Merriweather", sans-serif;
+              font-size: 1.6rem;
+              background-color: #400010;
+              text-decoration: none;
+              text-transform: uppercase;
+              color: white;
+              border: 1px solid #d4af37;
+              border-radius: 8px;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+    .team-sec {
+      margin-bottom: 10rem;
+      .team-cont {
+        .team-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          h1 {
+            font-family: "Tangerine", cursive;
+            font-weight: 400;
+            font-size: 7.5rem;
+            text-align: center;
+            color: #400010;
+            letter-spacing: 5%;
+          }
+          img {
+            height: 7rem;
+            width: auto;
+          }
+        }
+        .team-wrt {
+          margin-top: 2.6rem;
+          p {
+            font-family: "Walter Turncoat", cursive;
+            text-transform: uppercase;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            color: rgba(64, 0, 16, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  .box {
+    transform: translateX(-100%);
+    transition: transform 1s linear;
+  }
+
+  .box.show {
+    transform: translateX(0%);
+  }
+}
+
+//FOOTER
+
+@media screen and (max-width: 992px) {
+  footer {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../images/footer-bg.webp");
+    background-repeat: no-repeat;
+    z-index: 99;
+    .footer-container {
+      padding-left: 2.5rem;
+      padding-top: 10rem;
+      padding-right: 7rem;
+      padding-bottom: 10rem;
+      .footer-cont {
+        .footer-links {
+          nav {
+            .nav-list {
+              display: flex;
+              justify-content: end;
+              align-items: center;
+              list-style: none;
+              gap: 4rem;
+              .nav-item {
+                a {
+                  color: white;
+                  font-family: "DM Sans", sans-serif;
+                  font-size: 1.4rem;
+                  line-height: 2.7rem;
+                  text-decoration: none;
+                  font-weight: bold;
+                  transition: all 0.4s;
+                }
+                a:hover {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+        .footer-writing {
+          margin-top: 3.5rem;
+          .f-part {
+            font-family: "Tangerine", cursive;
+            font-weight: 400;
+            font-size: 3.4rem;
+            line-height: 3.6rem;
+            color: white;
+          }
+          .s-part {
+            font-family: "Tangerine", cursive;
+            font-weight: 400;
+            font-size: 3.4rem;
+            line-height: 3.6rem;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-item.active {
+    a {
+      color: #4d0013;
+    }
+  }
+}
+
+//PHOTO
+
+@media screen and (max-width: 992px) {
+  .foto-m {
+    margin-top: 8.6rem;
+    .foto-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15rem;
+      margin-bottom: 12rem;
+      div {
+        height: 56rem;
+        width: 142rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("../images/Lights_01.webp");
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+      }
+    }
+    .foto-wrt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 14rem 0rem;
+      h1 {
+        text-align: center;
+        font-family: "Tangerine", cursive;
+        font-weight: 700;
+        font-size: 6rem;
+        color: rgba(64, 0, 16, 0.8);
+      }
+    }
+    .foto-gal-sec {
+      margin-bottom: 20rem;
+      .foto-gal-container {
+        padding: 0rem 10rem;
+        .foto-gal {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-content: center;
+          align-items: center;
+          gap: 1.6rem;
+          .foto-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(64, 0, 16, 0.8);
+            border-radius: 10px;
+            padding: 7.5rem 5rem;
+            img,
+            .coming {
+              width: 50px;
+              height: 50px;
+            }
+          }
+          .coming {
+            background: rgba(64, 0, 16, 1);
+            width: auto;
+            height: 70px !important;
+            h1 {
+              text-align: center;
+              font-family: "Tangerine", cursive;
+              font-weight: 400;
+              font-size: 6rem;
+              color: #d4af37;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// HOME
+@media screen and (max-width: 992px) {
+  $red-heading: #64313e;
+  $white-bg: #f9f7f5;
+
+  .hero-sec {
+    background-color: $white-bg;
+    padding-top: 14rem;
+    position: relative;
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 168vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../images/stripes-bg.webp");
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+    .hero-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 2;
+      .hero {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .top-img {
+          width: 25rem;
+          height: 8.7rem;
+        }
+
+        .bot-img {
+          width: 30rem;
+          height: 9rem;
+        }
+      }
+      .hero-names {
+        h1 {
+          font-family: "Tangerine", cursive;
+          font-weight: 700;
+          font-size: 10rem;
+          line-height: 10rem;
+          text-align: center;
+          color: $red-heading;
+          margin-top: 2.5rem;
+        }
+      }
+
+      .hero-welcome {
+        h2 {
+          font-family: "Tangerine", cursive;
+          font-weight: 400;
+          font-size: 7rem;
+          line-height: 4.8rem;
+          text-align: center;
+          color: $red-heading;
+          margin-top: 5rem;
+        }
+        h3 {
+          font-family: "Tangerine", cursive;
+          font-weight: 700;
+          font-size: 6rem;
+          line-height: 4.8rem;
+          text-align: center;
+          color: $red-heading;
+          margin-top: 7.5rem;
+        }
+        h4 {
+          font-family: "Tangerine", cursive;
+          font-weight: 400;
+          font-size: 6rem;
+          line-height: 4.8rem;
+          text-align: center;
+          color: $red-heading;
+          margin-top: 7.5rem;
+        }
+      }
+    }
+  }
+
+  /* counter */
+  .date-area {
+    margin-top: 10rem;
+    margin-bottom: 40rem;
+    z-index: 99;
+  }
+  .show-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    .countdown-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: 2px solid $red-heading;
+      border-radius: 8px;
+      padding: 2.5rem 5rem;
+      background-color: $white-bg;
+      p {
+        font-size: 5rem;
+        margin-bottom: 2.5rem;
+      }
+      span {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  //end of counter
+
+  // home rsvp begin
+
+  .home-rsvp-sec {
+    background: rgba(64, 0, 16, 0.8);
+    .home-rsvp-container {
+      padding-left: 2.5rem;
+      padding-top: 10rem;
+      padding-right: 2.5rem;
+      padding-bottom: 10rem;
+      .hrsvp {
+        h1 {
+          color: white;
+          font-family: "Tangerine", cursive;
+          font-weight: 700;
+          font-size: 6rem;
+        }
+        p {
+          margin-top: 3.5rem;
+          color: white;
+          font-family: "Tangerine", cursive;
+          font-weight: 700;
+          font-size: 3.8rem;
+        }
+        .hrsvp-btn-area {
+          margin-top: 3.5rem;
+          .hrsvp-btn {
+            display: inline-block;
+            padding: 2.4rem 4rem;
+            font-weight: 900;
+            font-family: "Merriweather", sans-serif;
+            font-size: 1.6rem;
+            background-color: #400010;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            border: 1px solid #d4af37;
+            border-radius: 8px;
+            transition: all 0.3s;
+          }
+          .hrsvp-btn:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  // home rsvp end
+
+  // start of benvenuti
+
+  .ben-sec {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    .ben-container {
+      .benvenuti {
+        .ben-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          h1 {
+            font-family: "Tangerine", cursive;
+            font-weight: 400;
+            font-size: 7.5rem;
+            text-align: center;
+            color: #400010;
+            letter-spacing: 5%;
+          }
+          img {
+            height: 4rem;
+            width: auto;
+          }
+        }
+        .ben-grid {
+          margin-top: 5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 3rem;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          .ben-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            .ben-img-area {
+              width: 28rem;
+              height: 28rem;
+              border-radius: 1rem;
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+
+              background-repeat: no-repeat;
+            }
+            .ben-img-area.img1 {
+              background-image: url("../images/Couple_03.webp");
+            }
+            .ben-img-area.img2 {
+              background-image: url("../images/Logo_01.webp");
+            }
+            .ben-img-area.img3 {
+              background-image: url("../images/Chappel_01.webp");
+            }
+            .ben-nav-btn-area {
+              margin-top: 5rem;
+              .ben-nav-link {
+                width: 20rem;
+                height: 5.8rem;
+                background-color: #400010;
+                color: white;
+                font-weight: 900;
+                font-family: "Merriweather", sans-serif;
+                text-align: center;
+                font-size: 1.6rem;
+                padding: 1rem 4rem;
+                text-decoration: none;
+                border-radius: 8px;
+              }
+            }
+          }
+        }
+        .ben-wrt {
+          margin-top: 7.5rem;
+          h2 {
+            font-family: "Tangerine", cursive;
+            font-weight: 400;
+            font-size: 5rem;
+            text-align: center;
+            color: #400010;
+          }
+          h1 {
+            margin-top: 3.5rem;
+            font-family: "Tangerine", cursive;
+            font-weight: 700;
+            font-size: 5rem;
+            text-align: center;
+            color: #400010;
+          }
+        }
+      }
+    }
+  }
+
+  // end of benvenuti
+
+  //couple sec start
+
+  .homes .couple-sec {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../images/homebg.svg");
+    height: 150rem;
+    width: auto;
+    .couple-cont {
+      position: relative;
+      .couple-main-img {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("../images/Couple_01.webp");
+        height: 45rem;
+        width: 90rem;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+      }
+      .couple-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8rem;
+        padding-top: 38rem;
+        padding-bottom: 12rem;
+        h1 {
+          font-family: "Tangerine", cursive;
+          font-weight: 700;
+          font-size: 6rem;
+          text-align: center;
+          color: white;
+          line-height: 7rem;
+        }
+        .main-couple {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5rem;
+          .img-box {
+            img {
+              width: 37rem;
+              height: 50rem;
+              border-radius: 1rem;
+            }
+          }
+          .wedding-cards {
+            .card-item {
+              background-color: white;
+              border-radius: 0.8rem;
+              position: relative;
+              .card-img {
+                position: absolute;
+                top: 0%;
+                left: 13%;
+                transform: translate(-50%, -50%);
+                img {
+                  width: 7.1rem;
+                  height: 7.2rem;
+                }
+              }
+              .card-wrt {
+                padding: 5.5rem 2.4rem 2.4rem 2.4rem;
+                width: 100%;
+                p {
+                  font-family: "Tangerine", cursive;
+                  font-weight: 400;
+                  font-size: 2.8rem;
+                  line-height: 3rem;
+                  color: #400010;
+                }
+                .card-divider {
+                  height: 1px;
+                  width: 100%;
+                  background-color: #e6e6e6;
+                  margin-top: 2.4rem;
+                  margin-bottom: 2.4rem;
+                }
+                .card-footer {
+                  p {
+                    font-family: "Tangerine", cursive;
+                    font-weight: 700;
+                    font-size: 2.8rem;
+                    color: #400010;
+                    margin-bottom: 0.8rem;
+                  }
+                  span {
+                    font-family: "Tangerine", cursive;
+                    font-weight: 400;
+                    font-size: 2.8rem;
+                    color: #400010;
+                  }
+                }
+              }
+            }
+            .card-item.v2 {
+              margin-top: 8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .seperator-sec {
+    background-image: url("../images/sep.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    height: 20.6rem;
+    width: auto;
+  }
+
+  //couple sec end
+
+  main,
+  header,
+  footer,
+  #ui {
+    opacity: 0;
+  }
+
+  .loader-map {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide {
+    //animation: slide 2s ease 2s forwards;
+    //animation-iteration-count: 1;
+    opacity: 0;
+  }
+
+  .ldng-btn-area {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ldng-btn {
+      display: inline-block;
+      cursor: pointer;
+      padding: 2.4rem 4rem;
+      font-weight: 900;
+      font-family: "Merriweather", sans-serif;
+      font-size: 1.6rem;
+      background-color: #400010;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+    .ldng-btn:hover {
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes slide {
+    from {
+      top: 0;
+    }
+    to {
+      top: -500vw;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  $white-bg: #f9f7f5;
+  $red-bg: #64313e;
+  $red-text: rgba(64, 0, 16, 0.8);
+  $claret-red: #400010;
+  $claret-light: rgba(64, 0, 16, 0.5);
+
+  .bread-crumb {
+    position: relative;
+    top: 7rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Tangerine", sans-serif;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .links {
+      grid-column: 2 / 18;
+      grid-row: 1;
+      .bread-crumb-list {
+        font-family: "Merriweather";
+        display: flex;
+        gap: 2rem;
+        color: $claret-light;
+        list-style-type: none;
+        a {
+          font-size: 2rem;
+          text-decoration: none;
+          color: inherit;
+          &:hover {
+            color: $claret-red;
+            transition: all 0.4s;
+          }
+        }
+        li {
+          display: flex;
+          justify-items: center;
+          align-items: center;
+          svg {
+            fill: $claret-light;
+            width: 1.6rem;
+            width: 1.6rem;
+          }
+        }
+      }
+    }
+    .page-title {
+      margin-top: 1.5rem;
+      grid-column: 2/18;
+      grid-row: 2;
+      color: $claret-red;
+      font-size: 6rem;
+    }
+  }
+}

@@ -110,9 +110,10 @@ function Story() {
                       <h1>2019</h1>
                     </div>
                   </div>
+                  <div className="empty-div"></div>
                 </div>
                 <div className="tline-item right">
-                  <div className="blank"></div>
+                  <div className="empty-div"></div>
                   <div className="tline-ind">
                     <div className="he">
                       <h1>2020</h1>
@@ -153,9 +154,10 @@ function Story() {
                       <h1>2021</h1>
                     </div>
                   </div>
+                  <div className="empty-div"></div>
                 </div>
                 <div className="tline-item right">
-                  <div className="blank"></div>
+                  <div className="empty-div"></div>
                   <div className="tline-ind">
                     <div className="he">
                       <h1>2022</h1>
@@ -192,6 +194,7 @@ function Story() {
                       <h1>2023</h1>
                     </div>
                   </div>
+                  <div className="empty-div"></div>
                 </div>
               </div>
             </div>
