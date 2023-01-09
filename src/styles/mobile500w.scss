@@ -161,12 +161,18 @@
               text-align: center;
               justify-content: center;
               align-items: center;
+              width: 100%;
+              padding-left: 2rem;
+              padding-right: 2rem;
             }
             .tline-item.left {
+              width: 100%;
               flex-direction: column-reverse;
               justify-content: center;
               align-items: center;
               text-align: center;
+              padding-left: 2rem;
+              padding-right: 2rem;
             }
           }
         }
@@ -1738,8 +1744,8 @@
       align-items: center;
       z-index: 20;
       position: fixed;
-      top: 5.6rem;
-      right: 5.6rem;
+      top: 3rem;
+      right: 3rem;
       .nav-mob-ham {
         color: #4d0013;
         background-color: #d4af37;
