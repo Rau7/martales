@@ -11,7 +11,7 @@ $color2: #fdfce6;
 $color3: #efbf65;
 $bkg-color: #400010;
 $speed: 1.5s;
-$snitch-sm-size: 100px;
+$snitch-sm-size: 8rem;
 $snitch-size: 150px;
 $border-size: 0.42rem;
 $border-size-2: 0.62rem;
@@ -39,28 +39,57 @@ img {
 //VARIABLES
 
 .ball-load {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: $bkg-color;
-  z-index: 11;
+  z-index: 200;
+  animation: moveTotal ease-in-out 1s forwards;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
   input {
     display: none;
+  }
+  .cont {
+    animation: moveSnitchBotAndTop ease-in-out 2s;
+    animation-iteration-count: 1;
   }
 }
 
 .snitch {
   position: relative;
   text-align: center;
-  width: $snitch-size;
-  height: $snitch-size;
+  width: 10rem;
+  height: 10rem;
   cursor: pointer;
 }
+
+@keyframes moveSnitchBotAndTop {
+  0% {
+  }
+  50% {
+    margin-top: 90vh;
+  }
+  100% {
+    margin-top: -50vh;
+  }
+}
+@keyframes moveTotal {
+  0% {
+  }
+  50% {
+  }
+  100% {
+    transform: translateY(-100vh);
+    height: 0;
+  }
+}
+
 .snitch .obj {
   position: relative;
   width: 100%;
