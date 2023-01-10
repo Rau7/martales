@@ -137,7 +137,7 @@ function Wedding() {
               <h1>Non vediamo l'ora di festeggiare insieme!</h1>
               <p>
                 Si prega gentilmente di rispondere all'invito entro e non oltre
-                il 31 Gennaio 2023, per motivi organizzativi.{" "}
+                il 28 Febbraio 2023, per motivi organizzativi.{" "}
               </p>
               <div className="wrsvp-btn-area">
                 <a href="/rsvp" className="wrsvp-btn">
