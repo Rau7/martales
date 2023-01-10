@@ -745,8 +745,9 @@
           grid-template-columns: 1fr;
           gap: 5rem;
           .mes-form {
+            width: 100%;
             order: 2;
-            padding: 9.5rem 5rem;
+            padding: 5rem 2rem;
             background: rgba(64, 0, 16, 0.75);
             border-radius: 10px;
             .mes-suc {
@@ -819,7 +820,8 @@
             }
           }
           .mes-info {
-            padding: 9.5rem 10.4rem;
+            width: 100%;
+            padding: 5rem 2rem;
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
@@ -933,21 +935,21 @@
             flex-direction: column;
             gap: 5rem;
             .broom {
-              width: 40.8rem;
-              height: 24.8rem;
+              height: 100%;
+              width: 25rem;
               transform: rotate(31.99deg);
-              margin-right: 2.7rem;
+              margin-right: 0rem;
             }
             .bus {
-              width: 26.9rem;
-              height: 32.6rem;
-              margin-right: 5rem;
+              height: 100%;
+              width: 25rem;
+              margin-right: 0rem;
               filter: drop-shadow(-19px 1px 7px rgba(30, 52, 92, 1));
             }
             .owl {
-              width: 31.4rem;
-              height: 33.5rem;
-              margin-left: 6.7rem;
+              height: 100%;
+              width: 25rem;
+              margin-left: 0rem;
               filter: drop-shadow(-19px 1px 7px rgba(112, 85, 55, 1));
             }
             .tp-item-wrt {
@@ -985,20 +987,20 @@
             gap: 10rem;
             .broom {
               height: 100%;
-              width: 30rem;
+              width: 25rem;
               transform: rotate(212deg);
               rotate: 180deg;
-              margin-right: 2.7rem;
+              margin-right: 0rem;
             }
             .bus {
               height: 100%;
-              width: 30rem;
-              margin-right: 5rem;
+              width: 25rem;
+              margin-right: 0rem;
             }
             .owl {
               height: 100%;
-              width: 30rem;
-              margin-left: 6.7rem;
+              width: 25rem;
+              margin-left: 0rem;
             }
             .tp-item-wrt {
               h1 {
