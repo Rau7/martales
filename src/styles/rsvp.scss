@@ -14,6 +14,15 @@
           background: rgba(64, 0, 16, 0.75);
           border-top-left-radius: 10px;
           border-bottom-left-radius: 10px;
+          .mes-suc {
+            display: none;
+            h1 {
+              font-family: "Tangerine", cursive;
+              font-weight: 400;
+              font-size: 4.8rem;
+              line-height: 4rem;
+            }
+          }
           h1 {
             font-family: "Tangerine", cursive;
             font-weight: 700;
@@ -54,8 +63,27 @@
                 }
               }
             }
+            .form-btn-area {
+              .form-btn {
+                font-weight: 900;
+                font-family: "Merriweather", sans-serif;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                color: white;
+                background-color: #400010;
+                text-align: center;
+                padding: 2rem 4rem;
+                border: 0px solid transparent;
+                border-radius: 4px;
+                cursor: pointer;
+                &:hover {
+                  background-color: #2e000b;
+                }
+              }
+            }
           }
         }
+
         .mes-info {
           padding: 9.5rem 10.4rem;
           background-repeat: no-repeat;

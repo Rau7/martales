@@ -9,6 +9,8 @@ import owl from "../images/Owl_01.webp";
 import bus from "../images/bus.webp";
 import bot1 from "../images/Ornament_02.webp";
 import axios from "axios";
+import { database } from "../fire/firebase";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 const Rsvp = () => {
   const [email, setEmail] = useState("");
@@ -16,16 +18,31 @@ const Rsvp = () => {
   const [phone, setPhone] = useState("");
   const [note, setNote] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    axios
-      .post(
-        `https://api.reblium.com/Service/catch_subscriber?subscriber=${email}`
-      )
-      .then((response) => console.log(response))
-      .catch((error) => {
-        console.error("There was an error!", error);
+
+    try {
+      await addDoc(collection(database, "mamessages"), {
+        name: name,
+        email: email,
+        phone: phone,
+        note: note,
+        date: Timestamp.now(),
       });
+      setEmail("");
+      setName("");
+      setPhone("");
+      setNote("");
+
+      const mesForm = document.querySelector(".in");
+      const mesSuc = document.querySelector(".mes-suc");
+      mesForm.style.display = "none";
+      mesSuc.style.display = "block";
+      //onClose();
+      //setShowMess(true);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const handleEmailChange = (e) => {
@@ -90,56 +107,67 @@ const Rsvp = () => {
           <div className="rsvp-mes-container">
             <div className="mes-grid">
               <div className="mes-form">
-                <h1>Ci sarai?</h1>
-                <form onSubmit={handleSubmit}>
-                  <div className="form-item">
-                    <label htmlFor="nomes">Nome</label>
-                    <input
-                      className="form-input"
-                      id="nomes"
-                      type="email"
-                      placeholder="Nome Completo"
-                      onChange={handleNameChange}
-                      value={name}
-                    />
-                  </div>
-                  <div className="form-item">
-                    <label htmlFor="emailaddress">Email</label>
-                    <input
-                      className="form-input"
-                      id="emailaddress"
-                      type="email"
-                      placeholder="Indirizzo email"
-                      onChange={handleEmailChange}
-                      value={email}
-                    />
-                  </div>
-                  <div className="form-item">
-                    <label htmlFor="number">Numero di Partecipanti</label>
-                    <input
-                      className="form-input"
-                      id="number"
-                      type="phone"
-                      placeholder="Numero totale"
-                      onChange={handlePhoneChange}
-                      value={phone}
-                    />
-                  </div>
-                  <div className="form-item">
-                    <label htmlFor="note">Note</label>
-                    <textarea
-                      className="form-input"
-                      name="user_message"
-                      id="user-message"
-                      cols="20"
-                      rows="10"
-                      placeholder="Includere eventuali allergie o intolleranze alimentari, etc..."
-                      value={note}
-                      onChange={handleNoteChange}
-                    ></textarea>
-                  </div>
-                </form>
+                <div className="in">
+                  <h1>Ci sarai?</h1>
+                  <form onSubmit={handleSubmit}>
+                    <div className="form-item">
+                      <label htmlFor="nomes">Nome</label>
+                      <input
+                        className="form-input"
+                        id="nomes"
+                        type="text"
+                        placeholder="Nome Completo"
+                        onChange={handleNameChange}
+                        value={name}
+                      />
+                    </div>
+                    <div className="form-item">
+                      <label htmlFor="emailaddress">Email</label>
+                      <input
+                        className="form-input"
+                        id="emailaddress"
+                        type="email"
+                        placeholder="Indirizzo email"
+                        onChange={handleEmailChange}
+                        value={email}
+                      />
+                    </div>
+                    <div className="form-item">
+                      <label htmlFor="number">Numero di Partecipanti</label>
+                      <input
+                        className="form-input"
+                        id="number"
+                        type="phone"
+                        placeholder="Numero totale"
+                        onChange={handlePhoneChange}
+                        value={phone}
+                      />
+                    </div>
+                    <div className="form-item">
+                      <label htmlFor="note">Note</label>
+                      <textarea
+                        className="form-input"
+                        name="user_message"
+                        id="user-message"
+                        cols="20"
+                        rows="10"
+                        placeholder="Includere eventuali allergie o intolleranze alimentari, etc..."
+                        value={note}
+                        onChange={handleNoteChange}
+                      ></textarea>
+                    </div>
+                    <div className="form-btn-area">
+                      <button className="form-btn" type="submit">
+                        Send
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div className="mes-suc">
+                  <h1>Il tuo messaggio è stato inviato!</h1>
+                </div>
               </div>
+
               <div className="mes-info">
                 <div className="mes-header">
                   <p>Il Matrimonio di </p>

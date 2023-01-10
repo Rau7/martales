@@ -4,6 +4,7 @@ import Rsvp from "./pages/Rsvp";
 import Story from "./pages/Story";
 import Foto from "./pages/Foto";
 import Wedding from "./pages/Wedding";
+import Messages from "./pages/Messages";
 import "./styles/general.scss";
 import "./styles/home.scss";
 import "./styles/mobile1200w.scss";
@@ -12,6 +13,7 @@ import "./styles/mobile768w.scss";
 import "./styles/mobile500w.scss";
 import "./styles/mobile500h.scss";
 import "./styles/navbar.scss";
+
 function App() {
   return (
     <Routes>
@@ -20,6 +22,7 @@ function App() {
       <Route exact path="/rsvp" element={<Rsvp />} />
       <Route exact path="/foto" element={<Foto />} />
       <Route exact path="/il_matrimonio" element={<Wedding />} />
+      <Route exact path="/messages" element={<Messages />} />
     </Routes>
   );
 }
