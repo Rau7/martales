@@ -37,6 +37,7 @@ function Messages() {
         <table>
           <tr>
             <th>ID</th>
+            <th>Name</th>
             <th>Number</th>
             <th>Email</th>
             <th>Message</th>
@@ -46,6 +47,7 @@ function Messages() {
             messages.map((item, index) => (
               <tr>
                 <td>{index + 1}</td>
+                <td>{item.name}</td>
                 <td>{item.phone}</td>
                 <td>{item.email}</td>
                 <td rowspan="">{item.note}</td>
