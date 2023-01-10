@@ -3,13 +3,47 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BreadCrumb from "../components/BreadCrumb";
 import "../styles/rsvp.scss";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import broom from "../images/Broom_01.webp";
 import owl from "../images/Owl_01.webp";
 import bus from "../images/bus.webp";
 import bot1 from "../images/Ornament_02.webp";
+import axios from "axios";
 
 const Rsvp = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [note, setNote] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post(
+        `https://api.reblium.com/Service/catch_subscriber?subscriber=${email}`
+      )
+      .then((response) => console.log(response))
+      .catch((error) => {
+        console.error("There was an error!", error);
+      });
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handlePhoneChange = (e) => {
+    setPhone(e.target.value);
+  };
+
+  const handleNoteChange = (e) => {
+    setNote(e.target.value);
+  };
+
   useEffect(() => {
     var footer = document.querySelector("footer");
     var header = document.querySelector("header");
@@ -55,7 +89,57 @@ const Rsvp = () => {
         <section className="rsvp-mes-sec">
           <div className="rsvp-mes-container">
             <div className="mes-grid">
-              <div className="mes-form"></div>
+              <div className="mes-form">
+                <h1>Ci sarai?</h1>
+                <form onSubmit={handleSubmit}>
+                  <div className="form-item">
+                    <label htmlFor="nomes">Nome</label>
+                    <input
+                      className="form-input"
+                      id="nomes"
+                      type="email"
+                      placeholder="Nome Completo"
+                      onChange={handleNameChange}
+                      value={name}
+                    />
+                  </div>
+                  <div className="form-item">
+                    <label htmlFor="emailaddress">Email</label>
+                    <input
+                      className="form-input"
+                      id="emailaddress"
+                      type="email"
+                      placeholder="Indirizzo email"
+                      onChange={handleEmailChange}
+                      value={email}
+                    />
+                  </div>
+                  <div className="form-item">
+                    <label htmlFor="number">Numero di Partecipanti</label>
+                    <input
+                      className="form-input"
+                      id="number"
+                      type="phone"
+                      placeholder="Numero totale"
+                      onChange={handlePhoneChange}
+                      value={phone}
+                    />
+                  </div>
+                  <div className="form-item">
+                    <label htmlFor="note">Note</label>
+                    <textarea
+                      className="form-input"
+                      name="user_message"
+                      id="user-message"
+                      cols="20"
+                      rows="10"
+                      placeholder="Includere eventuali allergie o intolleranze alimentari, etc..."
+                      value={note}
+                      onChange={handleNoteChange}
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
               <div className="mes-info">
                 <div className="mes-header">
                   <p>Il Matrimonio di </p>
