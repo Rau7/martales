@@ -183,7 +183,7 @@ function Home() {
                 <div className="ben-item">
                   <div className="ben-img-area img1"></div>
                   <div className="ben-nav-btn-area">
-                    <a href="#" className="ben-nav-link">
+                    <a href="/ln_storia" className="ben-nav-link">
                       La Nostra Storia
                     </a>
                   </div>
@@ -191,15 +191,15 @@ function Home() {
                 <div className="ben-item">
                   <div className="ben-img-area img2"></div>
                   <div className="ben-nav-btn-area">
-                    <a href="#" className="ben-nav-link">
-                      La Nostre Foto
+                    <a href="/lista_nozze" className="ben-nav-link">
+                      Lista Nozze
                     </a>
                   </div>
                 </div>
                 <div className="ben-item">
                   <div className="ben-img-area img3"></div>
                   <div className="ben-nav-btn-area">
-                    <a href="#" className="ben-nav-link">
+                    <a href="/il_matrimonio" className="ben-nav-link">
                       Il Gran Giorno
                     </a>
                   </div>
@@ -224,7 +224,7 @@ function Home() {
                 il 31 Gennaio 2023, per motivi organizzativi.{" "}
               </p>
               <div className="hrsvp-btn-area">
-                <a href="#" className="hrsvp-btn">
+                <a href="/rsvp" className="hrsvp-btn">
                   RSVP {">"}
                 </a>
               </div>

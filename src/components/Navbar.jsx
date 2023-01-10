@@ -36,6 +36,9 @@ const Navbar = () => {
             <a href="/il_matrimonio">Il Matrimonio</a>
           </li>
           <li className="nav-item">
+            <a href="/lista_nozze">Lista Nozze</a>
+          </li>
+          <li className="nav-item">
             <a href="/rsvp">RSVP</a>
           </li>
           <li className="nav-item">
@@ -67,6 +70,9 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <a href="/il_matrimonio">Il Matrimonio</a>
+                </li>
+                <li className="nav-item">
+                  <a href="/lista_nozze">Lista Nozze</a>
                 </li>
                 <li className="nav-item">
                   <a href="/rsvp">RSVP</a>

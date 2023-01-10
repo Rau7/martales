@@ -255,19 +255,29 @@ const Rsvp = () => {
           </div>
         </section>
         <section className="add-sec">
-          <div className="add-container">
-            <div className="add-info">
-              <div className="add-wrt">
-                <h2>Antico Borgo di Sutri</h2>
-                <p>S.S. Cassia Km 46,7, 01015 Sutri VT, Italy</p>
-              </div>
-              <div className="add-btn">
-                <a href="#" className="a-btn">
-                  Visita la Location
-                </a>
+          <a
+            className="whole-l"
+            href="https://goo.gl/maps/VsWFdfNNRs13479U8"
+            target="_blank"
+          >
+            <div className="add-container">
+              <div className="add-info">
+                <div className="add-wrt">
+                  <h2>Antico Borgo di Sutri</h2>
+                  <p>S.S. Cassia Km 46,7, 01015 Sutri VT, Italy</p>
+                </div>
+                <div className="add-btn">
+                  <a
+                    href="https://ilborgodisutri.it/en/"
+                    target="_blank"
+                    className="a-btn"
+                  >
+                    Visita la Location
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </section>
         <section className="team-sec">
           <div className="team-cont">

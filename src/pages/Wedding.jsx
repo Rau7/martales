@@ -24,45 +24,6 @@ function Wedding() {
   }, []);
   return (
     <>
-      {/* <div className="ball-load">
-        <div>
-          <input type="checkbox" name="checkbox" id="animate" defaultChecked />
-          <label htmlFor="animate">
-            <div className="snitch">
-              <div className="obj">
-                <div className="body">
-                  <div className="flourish" />
-                  <div className="flourish" />
-                  <div className="flourish" />
-                  <div className="flourish">
-                    <div className="line" />
-                    <div className="line" />
-                    <div className="line" />
-                  </div>
-                  <div className="flourish">
-                    <div className="line" />
-                    <div className="line" />
-                    <div className="line" />
-                  </div>
-                </div>
-                <div className="l joint" />
-                <div className="l wing">
-                  <div className="feather" />
-                  <div className="feather" />
-                  <div className="feather" />
-                </div>
-                <div className="r joint" />
-                <div className="r wing">
-                  <div className="feather" />
-                  <div className="feather" />
-                  <div className="feather" />
-                </div>
-              </div>
-              <div className="shadow" />
-            </div>
-          </label>
-        </div>
-  </div> */}
       <Navbar />
       <BreadCrumb name={"Il Matrimonio"} link={"/il_matrimonio"} />
       <main className="wedding-m">
@@ -170,42 +131,6 @@ function Wedding() {
           </div>
         </section>
         <section className="seperator"></section>
-        <section className="nozze">
-          <div className="nozze-container">
-            <div className="nozze-main">
-              <div className="nozze-header">
-                <img src={scroll} alt="hm" />
-                <h1>Lista Nozze</h1>
-              </div>
-              <div className="cont-1">
-                <p>
-                  Non abbiamo una lista nozze! <br /> Quello che conta veramente
-                  è festeggiare la nostra unione insieme a chi amiamo. <br />
-                  <br /> La destinazione del nostro viaggio di nozze però è
-                  molto lontana: se volete, potete aiutarci a <br />{" "}
-                  raggiungerla.
-                </p>
-              </div>
-              <div className="iban-area">
-                <img src={iban} alt="iban-marta-alessandro" />
-                <h1>
-                  Intestatari: <br />
-                  Marta Bizzarro e Alessandro Baiano IBAN: <br />
-                  IT96F0623068020000057203211 <br /> BANCA: CREDIT AGRICOLE
-                  ITALIA <br /> Piazza Ganganelli, 10, 47822 <br />{" "}
-                  Santarcangelo di Romagna RN
-                </h1>
-              </div>
-              <div className="cont-2">
-                <p>
-                  ...Dopo aver letto l'IBAN, ci manderete a “quel paese”? <br />{" "}
-                  Nessun problema, ecco quelli che abbiamo scelto: <br />{" "}
-                  Egitto, Spagna, Madagascar, Stati Uniti!
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="w-rsvp-sec">
           <div className="w-rsvp-container">
             <div className="wrsvp">
@@ -215,7 +140,7 @@ function Wedding() {
                 il 31 Gennaio 2023, per motivi organizzativi.{" "}
               </p>
               <div className="wrsvp-btn-area">
-                <a href="#" className="wrsvp-btn">
+                <a href="/rsvp" className="wrsvp-btn">
                   RSVP {">"}
                 </a>
               </div>

@@ -21,10 +21,11 @@ const useCountdown = (targetDate) => {
 const getReturnValues = (countDown) => {
   // calculate time left
 
-  var days = Math.floor(countDown / (1000 * 60 * 60 * 24));
+  var days = Math.floor(countDown / (1000 * 60 * 60 * 24)) - 29;
 
-  const month = Math.floor(days / 30) - 1;
-  days = days - 5 * 30;
+  const month = Math.floor(days / 30);
+
+  days = Math.abs(days - 5 * 30) - 30;
   const hours = Math.floor(
     (countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
   );

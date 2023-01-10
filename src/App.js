@@ -5,6 +5,7 @@ import Story from "./pages/Story";
 import Foto from "./pages/Foto";
 import Wedding from "./pages/Wedding";
 import Messages from "./pages/Messages";
+import Nozze from "./pages/Nozze";
 import "./styles/general.scss";
 import "./styles/home.scss";
 import "./styles/mobile1200w.scss";
@@ -23,6 +24,7 @@ function App() {
       <Route exact path="/foto" element={<Foto />} />
       <Route exact path="/il_matrimonio" element={<Wedding />} />
       <Route exact path="/messages" element={<Messages />} />
+      <Route exact path="/lista_nozze" element={<Nozze />} />
     </Routes>
   );
 }
