@@ -5,6 +5,8 @@ $white-bg: #f9f7f5;
   background-color: $white-bg;
   padding-top: 14rem;
   position: relative;
+  background: url(../images/wall.jpg) !important;
+  background-repeat: repeat;
   .hero-bg {
     position: absolute;
     top: 0;
