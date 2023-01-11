@@ -1,10 +1,12 @@
 .message-area {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  background-color: #4d0013;
+  height: 100vh;
   .message-cont {
     width: 80%;
-    margin-top: 10rem;
+    margin-top: 15rem;
     .rdt_TableHead div {
       font-size: 6rem;
     }
@@ -58,18 +60,26 @@ table {
 
 .dataTables_filter {
   margin-bottom: 2rem;
-  label {
+  label,
+  input {
+    color: #d4af37;
     font-size: 2rem;
     font-family: arial, sans-serif;
+  }
+  input {
+    font-size: 1.6rem;
+    color: white;
   }
 }
 
 .dataTables_paginate {
+  color: #d4af37 !important;
   font-size: 1.8rem;
   font-family: arial, sans-serif;
 }
 
 .dataTables_info {
+  color: #d4af37 !important;
   font-size: 1.6rem;
   font-family: arial, sans-serif;
 }
@@ -85,6 +95,14 @@ th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+}
+
+th {
+  color: #d4af37;
+}
+
+td {
+  color: #dddddd;
 }
 
 tr:nth-child(even) {
