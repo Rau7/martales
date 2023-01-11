@@ -30,7 +30,7 @@ const Navbar = () => {
             <a href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a href="/ln_storia">La Nostria Storia</a>
+            <a href="/ln_storia">La Nostra Storia</a>
           </li>
           <li className="nav-item">
             <a href="/il_matrimonio">Il Matrimonio</a>
@@ -66,7 +66,7 @@ const Navbar = () => {
                   <a href="/">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a href="/ln_storia">La Nostria Storia</a>
+                  <a href="/ln_storia">La Nostra Storia</a>
                 </li>
                 <li className="nav-item">
                   <a href="/il_matrimonio">Il Matrimonio</a>

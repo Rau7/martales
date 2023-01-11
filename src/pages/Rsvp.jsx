@@ -182,7 +182,7 @@ const Rsvp = () => {
                 <div className="mes-footer">
                   <p>
                     Si prega gentilmente di rispondere all'invito entro e non
-                    oltre il 31 Gennaio 2023, per motivi organizzativi.
+                    oltre il 28 Febbraio 2023, per motivi organizzativi.
                   </p>
                 </div>
               </div>
@@ -239,7 +239,7 @@ const Rsvp = () => {
               <div className="tp-item-img-left">
                 <img src={owl} alt="owl" className="owl box" />
                 <div className="tp-item-wrt">
-                  <h1>In Aero</h1>
+                  <h1>In Aereo</h1>
                   <p>
                     La location dista 80 km
                     <br />
