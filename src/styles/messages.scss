@@ -49,10 +49,34 @@ table {
   border-collapse: collapse;
   width: 100%;
   th {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   td {
     font-size: 1.8rem;
+  }
+}
+
+.dataTables_filter {
+  margin-bottom: 2rem;
+  label {
+    font-size: 2rem;
+    font-family: arial, sans-serif;
+  }
+}
+
+.dataTables_paginate {
+  font-size: 1.8rem;
+  font-family: arial, sans-serif;
+}
+
+.dataTables_info {
+  font-size: 1.6rem;
+  font-family: arial, sans-serif;
+}
+
+.dt-buttons {
+  button {
+    font-size: 2rem;
   }
 }
 

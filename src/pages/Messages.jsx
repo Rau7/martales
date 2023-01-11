@@ -3,8 +3,16 @@ import "../styles/messages.scss";
 import { useEffect, useState } from "react";
 import { database } from "../fire/firebase";
 import { onSnapshot, collection, query } from "firebase/firestore";
+import "jquery/dist/jquery.min.js";
+import "datatables.net-dt/js/dataTables.dataTables";
+import "datatables.net-dt/css/jquery.dataTables.min.css";
+import "datatables.net-buttons/js/dataTables.buttons.js";
+import "datatables.net-buttons/js/buttons.colVis.js";
+import "datatables.net-buttons/js/buttons.flash.js";
+import "datatables.net-buttons/js/buttons.html5.js";
+import "datatables.net-buttons/js/buttons.print.js";
 import $ from "jquery";
-import DataTable, { createTheme } from "react-data-table-component";
+
 import Moment from "moment";
 
 function Messages() {
@@ -12,6 +20,101 @@ function Messages() {
   const [isLoading, setIsLoading] = useState(true);
   const [endIndex, setEndIndex] = useState(0);
   const [loadDis, setLoadDis] = useState("");
+
+  const names = [
+    {
+      title: "mr",
+      firstname: "Lawson",
+      lastname: "Luke",
+      age: 28,
+      occupation: "Software Developer",
+      hobby: "coding",
+    },
+    {
+      title: "mr",
+      firstname: "Michael",
+      lastname: "Jackson",
+      age: 35,
+      occupation: "Singer",
+      hobby: "dancing",
+    },
+    {
+      title: "mr",
+      firstname: "Janet",
+      lastname: "Jackson",
+      age: 35,
+      occupation: "Singer",
+      hobby: "dancing",
+    },
+  ];
+
+  useEffect(() => {
+    if (!$.fn.DataTable.isDataTable("#myTable")) {
+      $(document).ready(function () {
+        setTimeout(function () {
+          $("#table").DataTable({
+            pagingType: "full_numbers",
+            pageLength: 20,
+            processing: true,
+            dom: "Bfrtip",
+            select: {
+              style: "single",
+            },
+
+            buttons: [
+              {
+                extend: "pageLength",
+                className: "btn btn-secondary bg-secondary",
+              },
+              {
+                extend: "copy",
+                className: "btn btn-secondary bg-secondary",
+              },
+              {
+                extend: "csv",
+                className: "btn btn-secondary bg-secondary",
+              },
+              {
+                extend: "print",
+                customize: function (win) {
+                  $(win.document.body).css("font-size", "10pt");
+                  $(win.document.body)
+                    .find("table")
+                    .addClass("compact")
+                    .css("font-size", "inherit");
+                },
+                className: "btn btn-secondary bg-secondary",
+              },
+            ],
+
+            fnRowCallback: function (
+              nRow,
+              aData,
+              iDisplayIndex,
+              iDisplayIndexFull
+            ) {
+              var index = iDisplayIndexFull + 1;
+              $("td:first", nRow).html(index);
+              return nRow;
+            },
+
+            lengthMenu: [
+              [10, 20, 30, 50, -1],
+              [10, 20, 30, 50, "All"],
+            ],
+            columnDefs: [
+              {
+                targets: 0,
+                render: function (data, type, row, meta) {
+                  return type === "export" ? meta.row + 1 : data;
+                },
+              },
+            ],
+          });
+        }, 1000);
+      });
+    }
+  }, []);
 
   useEffect(() => {
     const messArr = [];
@@ -27,6 +130,25 @@ function Messages() {
     return Moment(date.toDate()).format("MMM Do, YYYY H:m");
   };
 
+  const showTable = () => {
+    try {
+      return messages.map((item, index) => {
+        return (
+          <tr>
+            <td>{index + 1}</td>
+            <td>{item.name}</td>
+            <td>{item.phone}</td>
+            <td>{item.email}</td>
+            <td rowspan="">{item.note}</td>
+            <td>{xspectarDateFormat(item.date)}</td>
+          </tr>
+        );
+      });
+    } catch (e) {
+      alert(e.message);
+    }
+  };
+
   return isLoading ? (
     <div className="spinner-container">
       <div className="spinner"></div>
@@ -34,27 +156,37 @@ function Messages() {
   ) : (
     <div className="message-area">
       <div className="message-cont">
-        <table>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Number</th>
-            <th>Email</th>
-            <th>Message</th>
-            <th>Date</th>
-          </tr>
-          {messages &&
-            messages.map((item, index) => (
+        <div class="table-responsive p-0 pb-2">
+          <table
+            id="table"
+            className="table align-items-center justify-content-center mb-0"
+          >
+            <thead>
               <tr>
-                <td>{index + 1}</td>
-                <td>{item.name}</td>
-                <td>{item.phone}</td>
-                <td>{item.email}</td>
-                <td rowspan="">{item.note}</td>
-                <td>{xspectarDateFormat(item.date)}</td>
+                <th className="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
+                  Number
+                </th>
+                <th className="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
+                  Name
+                </th>
+                <th className="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
+                  Email
+                </th>
+                <th className="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
+                  Phone
+                </th>
+                <th className="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
+                  Message
+                </th>
+                <th className="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
+                  Date
+                </th>
               </tr>
-            ))}
-        </table>
+            </thead>
+
+            <tbody>{showTable()}</tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
