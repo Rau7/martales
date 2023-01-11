@@ -137,8 +137,8 @@ function Messages() {
           <tr>
             <td>{index + 1}</td>
             <td>{item.name}</td>
-            <td>{item.phone}</td>
             <td>{item.email}</td>
+            <td>{item.phone}</td>
             <td rowspan="">{item.note}</td>
             <td>{xspectarDateFormat(item.date)}</td>
           </tr>
