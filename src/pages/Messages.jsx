@@ -20,6 +20,7 @@ function Messages() {
   const [isLoading, setIsLoading] = useState(true);
   const [endIndex, setEndIndex] = useState(0);
   const [loadDis, setLoadDis] = useState("");
+  const [total, setTotal] = useState(0);
 
   useEffect(() => {
     if (!$.fn.DataTable.isDataTable("#myTable")) {
@@ -91,9 +92,14 @@ function Messages() {
 
   useEffect(() => {
     const messArr = [];
+    var totalX = 0;
     const q = query(collection(database, "mamessages"));
     const unsub = onSnapshot(q, (querySnapshot) => {
-      querySnapshot.docs.forEach((d) => messArr.push(d.data()));
+      querySnapshot.docs.forEach((d) => {
+        messArr.push(d.data());
+        totalX += Number(d.data().phone);
+      });
+      setTotal(totalX);
       setMessages(messArr);
       setIsLoading(messArr.length <= 0 ? true : false);
     });
@@ -112,7 +118,7 @@ function Messages() {
             <td>{item.name}</td>
             <td>{item.email}</td>
             <td>{item.phone}</td>
-            <td rowspan="">{item.note}</td>
+            <td>{item.note}</td>
             <td>{xspectarDateFormat(item.date)}</td>
           </tr>
         );
@@ -128,8 +134,19 @@ function Messages() {
     </div>
   ) : (
     <div className="message-area">
+      <div className="message-heading">
+        <h1>Total # of Participants</h1>
+        <div className="counter">
+          <div className="outer">
+            <div className="inner">
+              <h3>{total}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="message-cont">
-        <div class="table-responsive p-0 pb-2">
+        <div className="table-responsive p-0 pb-2">
           <table
             id="table"
             className="table align-items-center justify-content-center mb-0"
