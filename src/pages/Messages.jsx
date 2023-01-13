@@ -21,33 +21,6 @@ function Messages() {
   const [endIndex, setEndIndex] = useState(0);
   const [loadDis, setLoadDis] = useState("");
 
-  const names = [
-    {
-      title: "mr",
-      firstname: "Lawson",
-      lastname: "Luke",
-      age: 28,
-      occupation: "Software Developer",
-      hobby: "coding",
-    },
-    {
-      title: "mr",
-      firstname: "Michael",
-      lastname: "Jackson",
-      age: 35,
-      occupation: "Singer",
-      hobby: "dancing",
-    },
-    {
-      title: "mr",
-      firstname: "Janet",
-      lastname: "Jackson",
-      age: 35,
-      occupation: "Singer",
-      hobby: "dancing",
-    },
-  ];
-
   useEffect(() => {
     if (!$.fn.DataTable.isDataTable("#myTable")) {
       $(document).ready(function () {
@@ -173,7 +146,7 @@ function Messages() {
                   Email
                 </th>
                 <th className="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
-                  Phone
+                  # of Participants
                 </th>
                 <th className="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
                   Message

@@ -3,10 +3,12 @@
   justify-content: center;
   align-items: flex-start;
   background-color: #4d0013;
-  height: 100vh;
+  height: 100%;
+
   .message-cont {
     width: 80%;
     margin-top: 15rem;
+    margin-bottom: 15rem;
     .rdt_TableHead div {
       font-size: 6rem;
     }
@@ -76,6 +78,10 @@ table {
   color: #d4af37 !important;
   font-size: 1.8rem;
   font-family: arial, sans-serif;
+  a {
+    font-size: 1.6rem;
+    font-family: arial, sans-serif;
+  }
 }
 
 .dataTables_info {
