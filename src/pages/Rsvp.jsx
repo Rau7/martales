@@ -137,7 +137,7 @@ const Rsvp = () => {
                       <input
                         className="form-input"
                         id="number"
-                        type="phone"
+                        type="text"
                         placeholder="Numero totale"
                         onChange={handlePhoneChange}
                         value={phone}
